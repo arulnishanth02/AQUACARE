@@ -1,0 +1,207 @@
+{
+  "speciesProfiles": {
+    "tilapia": {
+      "commonName": "Nile Tilapia (Oreochromis niloticus)",
+      "optimalRange": {
+        "ph": { "min": 6.5, "max": 8.5, "stressLow": 5.5, "stressHigh": 9.0, "lethalLow": 4.5, "lethalHigh": 10.0, "unit": "" },
+        "dissolvedOxygen": { "min": 5.0, "optimal": "5.0 - 8.0", "stress": 3.0, "lethal": 1.0, "unit": "mg/L" },
+        "ammonia": { "safe": 0.05, "stress": 0.2, "lethal": 1.0, "unit": "mg/L un-ionized NH3" },
+        "nitrite": { "safe": 0.1, "stress": 0.5, "lethal": 1.5, "unit": "mg/L NO2" },
+        "nitrate": { "safe": 50.0, "stress": 100.0, "unit": "mg/L NO3" },
+        "temperature": { "min": 26.0, "max": 32.0, "stressLow": 20.0, "stressHigh": 35.0, "unit": "°C" },
+        "alkalinity": { "min": 80.0, "max": 150.0, "stressLow": 40.0, "unit": "mg/L CaCO3" }
+      },
+      "feedingRatePercentBodyWeight": "2% - 4% depending on fingerling vs grower stage",
+      "criticalNotes": "Tilapia tolerate poor water quality better than carps, but un-ionized ammonia >0.2 mg/L causes branchial hyperplasia and reduces feed conversion ratio."
+    },
+    "catfish": {
+      "commonName": "African Catfish (Clarias gariepinus)",
+      "optimalRange": {
+        "ph": { "min": 6.5, "max": 8.2, "stressLow": 5.0, "stressHigh": 9.0, "lethalLow": 4.0, "lethalHigh": 10.5, "unit": "" },
+        "dissolvedOxygen": { "min": 3.5, "optimal": "4.0 - 7.0", "stress": 2.0, "lethal": 0.8, "unit": "mg/L (Possesses suprabranchial air-breathing organ)" },
+        "ammonia": { "safe": 0.1, "stress": 0.4, "lethal": 1.5, "unit": "mg/L un-ionized NH3" },
+        "nitrite": { "safe": 0.2, "stress": 0.8, "lethal": 2.0, "unit": "mg/L NO2" },
+        "nitrate": { "safe": 80.0, "stress": 150.0, "unit": "mg/L NO3" },
+        "temperature": { "min": 26.0, "max": 30.0, "stressLow": 22.0, "stressHigh": 34.0, "unit": "°C" },
+        "alkalinity": { "min": 60.0, "max": 120.0, "stressLow": 30.0, "unit": "mg/L CaCO3" }
+      },
+      "feedingRatePercentBodyWeight": "3% - 5%",
+      "criticalNotes": "Possesses air-breathing accessory organ, surviving low dissolved oxygen; however highly susceptible to ammonia toxicity, cannibalism during high stocking density, and Columnaris fin erosion."
+    },
+    "carp": {
+      "commonName": "Major Indian & Common Carp (Rohu, Catla, Mrigal, Cyprinus carpio)",
+      "optimalRange": {
+        "ph": { "min": 7.0, "max": 8.5, "stressLow": 6.0, "stressHigh": 9.0, "lethalLow": 5.0, "lethalHigh": 9.8, "unit": "" },
+        "dissolvedOxygen": { "min": 5.0, "optimal": "6.0 - 8.5", "stress": 3.5, "lethal": 1.5, "unit": "mg/L" },
+        "ammonia": { "safe": 0.03, "stress": 0.1, "lethal": 0.8, "unit": "mg/L un-ionized NH3" },
+        "nitrite": { "safe": 0.05, "stress": 0.2, "lethal": 0.8, "unit": "mg/L NO2" },
+        "nitrate": { "safe": 40.0, "stress": 80.0, "unit": "mg/L NO3" },
+        "temperature": { "min": 24.0, "max": 30.0, "stressLow": 18.0, "stressHigh": 33.0, "unit": "°C" },
+        "alkalinity": { "min": 100.0, "max": 180.0, "stressLow": 60.0, "unit": "mg/L CaCO3" }
+      },
+      "feedingRatePercentBodyWeight": "2% - 3%",
+      "criticalNotes": "Very sensitive to dissolved oxygen dips and gill parasites (Dactylogyrus). Carp surface gasping at dawn requires immediate mechanical aeration."
+    },
+    "shrimp": {
+      "commonName": "Pacific White Shrimp / Giant River Prawn (Litopenaeus vannamei / Macrobrachium)",
+      "optimalRange": {
+        "ph": { "min": 7.5, "max": 8.5, "stressLow": 7.0, "stressHigh": 9.0, "lethalLow": 6.0, "lethalHigh": 9.5, "unit": "" },
+        "dissolvedOxygen": { "min": 5.0, "optimal": "5.5 - 7.5", "stress": 4.0, "lethal": 2.0, "unit": "mg/L" },
+        "ammonia": { "safe": 0.02, "stress": 0.08, "lethal": 0.5, "unit": "mg/L un-ionized NH3" },
+        "nitrite": { "safe": 0.05, "stress": 0.2, "lethal": 0.6, "unit": "mg/L NO2" },
+        "nitrate": { "safe": 30.0, "stress": 60.0, "unit": "mg/L NO3" },
+        "temperature": { "min": 28.0, "max": 32.0, "stressLow": 23.0, "stressHigh": 34.0, "unit": "°C" },
+        "alkalinity": { "min": 120.0, "max": 200.0, "stressLow": 90.0, "unit": "mg/L CaCO3 (crucial for exoskeleton molting)" }
+      },
+      "feedingRatePercentBodyWeight": "3% - 6%",
+      "criticalNotes": "Alkalinity below 100 mg/L causes soft shell syndrome and molt failure. Require vigorous paddlewheel aeration 24/7 during night hours."
+    }
+  },
+  "diseases": [
+    {
+      "id": "white_spot_ich",
+      "name": "White Spot Disease (Ichthyophthiriasis)",
+      "pathogen": "Ichthyophthirius multifiliis (Ciliate Ectoparasite)",
+      "symptoms": [
+        "Small white granular salt-like spots on skin, fins, and gills",
+        "Flashing or rubbing sides against pond dykes and nets",
+        "Lethargy and loss of appetite",
+        "Excess mucus production on skin"
+      ],
+      "severity": "High",
+      "treatments": [
+        "Apply un-iodized coarse pond salt at 2.0 - 3.0 kg per 1,000 liters (2 - 3 ppt) for 7-10 days to disrupt theront stage",
+        "Raise water temperature slightly (28°C - 30°C) if controllable to accelerate parasite life cycle",
+        "Increase pond aeration and siphon bottom sludge",
+        "For nursery tanks: formalin bath at 15-25 ppm under constant strict supervision"
+      ],
+      "prevention": "Quarantine new fingerlings for 14 days; sterilize nets and equipment with potassium permanganate (KMnO4) bath."
+    },
+    {
+      "id": "columnaris",
+      "name": "Columnaris Disease (Cotton Mouth / Saddleback)",
+      "pathogen": "Flavobacterium columnare (Gram-negative bacterium)",
+      "symptoms": [
+        "White or greyish patches around mouth, head, and dorsal fin ('saddleback')",
+        "Frayed, ragged fins with whitish borders",
+        "Gill necrosis and pale erosions",
+        "Sluggish swimming near the surface"
+      ],
+      "severity": "Very High",
+      "treatments": [
+        "Immediately lower pond water temperature or shading if heat stressed; stop high-protein feeding",
+        "Perform 25% - 30% clean water exchange",
+        "Salt bath at 1.0 - 2.0 g/L to relieve osmotic stress",
+        "Potassium permanganate (KMnO4) pond treatment at 2 mg/L for open earthen ponds",
+        "Consult licensed aquatic veterinarian for oxytetracycline medicated feed if mortality exceeds 5%"
+      ],
+      "prevention": "Avoid rough handling during netting; reduce stocking density; maintain dissolved oxygen above 5.0 mg/L."
+    },
+    {
+      "id": "dropsy_aeromonas",
+      "name": "Bacterial Hemorrhagic Septicemia & Dropsy",
+      "pathogen": "Aeromonas hydrophila / Aeromonas sobria",
+      "symptoms": [
+        "Severe abdominal swelling (bloating with ascites fluid)",
+        "Protruding pinecone-like scales across flank",
+        "Exophthalmia (bulging pop-eyes)",
+        "Ulcerative red sores or hemorrhages on belly and fin bases"
+      ],
+      "severity": "Critical",
+      "treatments": [
+        "Immediately isolate visibly bloated fish to prevent cannibalistic transmission",
+        "Halt all feeding for 48 hours to relieve kidney and liver burden",
+        "Perform immediate 30% water exchange with conditioned water",
+        "Increase dissolved oxygen via auxiliary aerators",
+        "Administer veterinary prescribed anti-microbial treatment; sterilize discharge water"
+      ],
+      "prevention": "Never feed spoiled or damp pellets; eliminate organic muck buildup on pond bottom using bio-remediation enzymes."
+    },
+    {
+      "id": "ammonia_poisoning",
+      "name": "Ammonia Toxicity / Gill Hyperplasia",
+      "pathogen": "Non-infectious (Chemical stress: High pH + elevated Total Ammonia Nitrogen)",
+      "symptoms": [
+        "Fish gasping at surface despite day aeration",
+        "Purplish-red or hyperemic inflamed gills with mucus clumps",
+        "Erratic darting, corkscrew swimming, spasms",
+        "Sudden anorexia (fish refuse feeding pellets completely)"
+      ],
+      "severity": "Critical Emergency",
+      "treatments": [
+        "IMMEDIATE ACTION: Cease 100% of feeding immediately! Unconsumed feed degrades into more toxic ammonia",
+        "Perform emergency 30% - 50% bottom water siphon and clean water dilution",
+        "Increase mechanical aeration immediately; turbulent air drives off gaseous ammonia",
+        "If pH is >8.5, safely buffer down towards 7.5 using humic acids or agricultural gypsum (do not crash pH abruptly)",
+        "Add beneficial nitrifying probiotic bacteria (Nitrosomonas/Nitrobacter) to accelerate biological conversion"
+      ],
+      "prevention": "Regularly monitor TAN weekly; calculate un-ionized NH3 with Emerson equation; adhere strictly to feeding tables."
+    },
+    {
+      "id": "hypoxia_oxygen_depletion",
+      "name": "Acute Hypoxia / Dissolved Oxygen Depletion",
+      "pathogen": "Environmental (Algal crash, cloudy days, thermal stratification, overfeeding)",
+      "symptoms": [
+        "Mass piping / surface gasping of all fish species, especially at 4:00 AM - 6:00 AM dawn",
+        "Fish congregating directly at pond inflows or aerator fountain sprays",
+        "Wide open mouths and flared opercula in dead fish",
+        "Larger fish dying first before fingerlings"
+      ],
+      "severity": "Code Red Emergency",
+      "treatments": [
+        "Turn on ALL aerators, paddlewheels, and water pumps immediately at maximum speed",
+        "Pump fresh oxygenated water or spray water as high-pressure fine mist over pond surface",
+        "Broadcast sodium percarbonate (emergency chemical oxygen generator) at 5 - 10 kg/hectare if available",
+        "Cease all feeding until sunlight restores natural phytoplankton photosynthetic oxygenation"
+      ],
+      "prevention": "Run aerators every night from midnight to sunrise; avoid excess organic fertilizers."
+    },
+    {
+      "id": "brown_blood_disease",
+      "name": "Nitrite Toxicity (Brown Blood Disease)",
+      "pathogen": "Chemical stress (Elevated NO2- binding to hemoglobin forming methemoglobin)",
+      "symptoms": [
+        "Chocolate-brown color of gill filaments instead of bright healthy red",
+        "Fish behaving hypoxic and sluggish even when dissolved oxygen meter reads normal (>5 mg/L)",
+        "Slow swimming at pond margins"
+      ],
+      "severity": "High",
+      "treatments": [
+        "Add agricultural non-iodized salt (NaCl) immediately: Chloride ions (Cl-) competitively block nitrite entry at gill receptors",
+        "Target Chloride to Nitrite ratio of at least 10:1 (roughly 50 - 100 kg salt per 100,000 liters for 1 ppm nitrite)",
+        "Cease feeding for 24-48 hours",
+        "Perform partial water exchange and maximize aeration"
+      ],
+      "prevention": "Avoid premature high stocking before biofilter nitrifying cycle is fully established."
+    }
+  ],
+  "verifiedProcedures": [
+    {
+      "name": "Emergency 30% Water Exchange",
+      "steps": [
+        "Drain 25-30% of pond water from bottom drain or submerged siphon to purge anaerobic sludge and organic waste.",
+        "Refill gradually with clean, tested, aerated source water over 4-6 hours to prevent temperature shock.",
+        "Ensure temperature difference between incoming water and pond is less than 2°C.",
+        "Verify pH of new water matches within 0.5 units of pond."
+      ]
+    },
+    {
+      "name": "Agricultural Liming for Low pH / Low Alkalinity",
+      "steps": [
+        "If pond pH is below 6.5 or total alkalinity is below 60 mg/L CaCO3, apply agricultural limestone (CaCO3) or dolomite.",
+        "Standard dose: 200 - 400 kg per hectare (or 20 - 40 g per square meter) dissolved in water slurry and sprayed evenly.",
+        "Do not apply quicklime (CaO) or hydrated lime (Ca(OH)2) in stocking ponds with fish, as caustic pH spike (>10.0) causes lethal gill burn.",
+        "Recheck pH and alkalinity 24 hours post application."
+      ]
+    },
+    {
+      "name": "Safe Aquaculture Salt Bath",
+      "steps": [
+        "Use only coarse un-iodized pure rock salt or aquaculture-grade sodium chloride.",
+        "For pond-wide application: 1.0 - 3.0 kg per 1,000 liters (1 - 3 ppt). Relieves osmotic stress and prevents nitrite toxicity.",
+        "For short dip bath: 10 - 20 g/L for 5 to 10 minutes in a separate quarantine tub under constant aeration. Return fish to pond immediately if they roll over."
+      ]
+    }
+  ]
+}
+
