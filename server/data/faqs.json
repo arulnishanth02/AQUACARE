@@ -1,0 +1,1403 @@
+[
+  {
+    "id": "surface-swimming",
+    "title": "Why are fish swimming near the water surface?",
+    "category": "Water Quality",
+    "severity": "Critical",
+    "shortDescription": "Surface swimming or piping often indicates severe oxygen depletion, gill damage, or high water toxins.",
+    "overview": "When fish congregate at the water surface gulping air (often referred to as 'piping'), they are seeking the thin layer of water in contact with atmospheric oxygen. While air-breathing fish like African Catfish occasionally surface naturally, widespread surfacing in carps, tilapia, or fry is a serious indicator of hypoxia, acute gill irritation, or toxin exposure.",
+    "symptoms": [
+      "Fish gathered uniformly near the top layer with mouths opening and closing rapidly",
+      "Crowding around paddlewheel aerators or fresh water inlet pipes",
+      "Sluggish response when approached or shadow cast over pond",
+      "Discolored or excessively slimy gill filaments upon closer examination"
+    ],
+    "possibleCauses": [
+      "Severe nocturnal dissolved oxygen depletion (especially between 3:00 AM and 6:00 AM)",
+      "High concentration of un-ionized toxic ammonia (NH3) burning sensitive gill tissues",
+      "Elevated nitrite levels (Brown Blood Disease / Methemoglobinemia)",
+      "Gill parasite infestations such as Dactylogyrus or Trichodina restricting gas exchange",
+      "Sudden plankton die-off (algal bloom collapse) consuming dissolved oxygen"
+    ],
+    "identification": [
+      "Measure Dissolved Oxygen (DO) immediately at 15–30 cm depth using a calibrated digital probe",
+      "Test water pH and Total Ammonia Nitrogen (TAN) using liquid drop test kits",
+      "Inspect gill color: bright cherry red indicates healthy gills, while pale, brownish, or mucus-clotted gills point to chemical/pathological damage",
+      "Determine if the surfacing behavior occurs strictly at dawn (typical for DO drop) or continues throughout full sunshine (suggests ammonia, nitrite, or gill parasites)"
+    ],
+    "immediateActions": [
+      "1. Activate all mechanical aerators, aspirators, and fountain pumps immediately at maximum capacity.",
+      "2. Start pumping fresh, well-aerated oxygen-rich water into the pond.",
+      "3. Cease 100% of feeding immediately to halt oxygen consumption by fish digestion and decomposing feed pellets.",
+      "4. Agitate water surface manually with boats or emergency sprayers if power aeration is unavailable."
+    ],
+    "shortTermSolutions": [
+      "1. Conduct a 20% to 30% bottom-water exchange to eliminate metabolic toxins.",
+      "2. Broadcast agricultural non-iodized salt (NaCl) at 1 to 2 kg per 1,000 liters if nitrite toxicity is suspected.",
+      "3. Siphon dense organic sediment accumulating near the pond drainage basin."
+    ],
+    "preventiveMeasures": [
+      "1. Run aeration routinely every night from midnight to sunrise, especially during cloudy or overcast weather.",
+      "2. Follow scientifically formulated feeding tables to avoid surplus organic accumulation.",
+      "3. Maintain moderate stocking densities suited to your pond's aeration capacity."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Dissolved Oxygen (DO)",
+        "idealRange": "5.0 - 8.0 mg/L",
+        "criticalLevel": "< 3.0 mg/L (stress), < 1.0 mg/L (lethal)",
+        "impact": "Severe respiratory failure, metabolic acidosis, and mass fish asphyxiation."
+      },
+      {
+        "parameter": "Total Ammonia Nitrogen (TAN)",
+        "idealRange": "< 0.5 mg/L",
+        "criticalLevel": "> 1.0 mg/L (dependent on pH and temperature)",
+        "impact": "Un-ionized ammonia damages gill lamellae, impairing oxygen uptake even when DO is normal."
+      }
+    ],
+    "expertHelp": "Contact a local fisheries extension officer or certified aquatic pathologist if surfacing continues despite aeration, if mass mortality exceeds 2% per day, or if fish exhibit physical bleeding on gills and fins.",
+    "references": [
+      "FAO Fisheries Technical Paper No. 427: Pond Water Quality Management",
+      "ICAR-CIFA Training Manual on Freshwater Aquaculture Diagnostics"
+    ],
+    "relatedFaqs": [
+      "low-dissolved-oxygen",
+      "fish-gasping-rapid-breathing",
+      "high-ammonia-levels",
+      "sudden-fish-mortality"
+    ]
+  },
+  {
+    "id": "low-dissolved-oxygen",
+    "title": "What happens when dissolved oxygen is low?",
+    "category": "Water Quality",
+    "severity": "Critical",
+    "shortDescription": "Understand the critical physiological hazards and warning indicators of oxygen depletion in aquaculture ponds.",
+    "overview": "Dissolved oxygen (DO) is the single most critical water quality parameter in aquaculture. When DO drops below optimal thresholds, fish enter severe metabolic stress, stop feeding, lose disease immunity, and can suffocate within hours. Oxygen crashes most frequently occur during late night hours and early morning due to organism respiration and algal photosynthesis cessation.",
+    "symptoms": [
+      "Mass piping and gasping at the water surface, especially between 4:00 AM and sunrise",
+      "Complete cessation of feeding response; feed floating untouched",
+      "Larger, faster-growing fish dying first (due to higher absolute oxygen demand)",
+      "Dead fish floating with flared opercula (gill covers) and widely open mouths"
+    ],
+    "possibleCauses": [
+      "Microscopic algae and bacteria consuming oxygen during the night without photosynthetic oxygen production",
+      "Algal bloom crash following overcast days or heavy rainstorms",
+      "Excessive stocking density exceeding the pond's biological carrying capacity",
+      "Excess unconsumed feed and manure accumulating as decomposing organic sludge",
+      "High water temperature reducing the physical solubility of oxygen gas in water"
+    ],
+    "identification": [
+      "Measure DO at 5:00 AM and again at 3:00 PM to record diurnal oxygen fluctuations",
+      "Observe water clarity: Secchi disk depth under 20 cm indicates an overly dense phytoplankton bloom prone to crash",
+      "Check weather forecast: consecutive overcast, calm days drastically reduce daytime photosynthetic oxygen production"
+    ],
+    "immediateActions": [
+      "1. Turn on all emergency paddlewheels, jet aerators, and diffused air blowers without delay.",
+      "2. Discharge oxygenated water spray over the pond surface using a high-pressure pump.",
+      "3. Stop all supplemental feeding immediately until DO levels rise above 4.5 mg/L.",
+      "4. If available, broadcast sodium percarbonate (emergency chemical oxygen releaser) at recommended field rates."
+    ],
+    "shortTermSolutions": [
+      "1. Perform a controlled 25% water exchange to flush decaying plankton.",
+      "2. Thin stock into adjacent ponds if the biomass density is dangerously high.",
+      "3. Shift feeding schedules to earlier in the day to prevent late evening feed digestion peaks."
+    ],
+    "preventiveMeasures": [
+      "1. Install continuous or automated DO sensors with alarm thresholds set at 4.0 mg/L.",
+      "2. Regulate fertilization to maintain a stable, moderate phytoplankton bloom (Secchi disc visibility: 30–40 cm).",
+      "3. Maintain auxiliary generator backup for mechanical aeration systems during power cuts."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Dissolved Oxygen (DO)",
+        "idealRange": "5.0 - 8.5 mg/L (Tilapia/Carp), 4.0 - 7.0 mg/L (Catfish)",
+        "criticalLevel": "< 3.0 mg/L (chronic stress), < 1.0 mg/L (acute lethal threshold for carps)",
+        "impact": "Hypoxia, suppressed growth, immune system collapse, and acute mortality."
+      },
+      {
+        "parameter": "Water Temperature",
+        "idealRange": "26°C - 31°C",
+        "criticalLevel": "> 33°C",
+        "impact": "Higher water temperatures decrease oxygen solubility while increasing fish metabolic oxygen demand."
+      }
+    ],
+    "expertHelp": "Seek immediate veterinary or aquaculture specialist assistance if mass die-offs occur despite maximum aeration, as combined toxicity (ammonia + hypoxia) may require specialized water remediation.",
+    "references": [
+      "Boyd, C.E. (2019). Water Quality: An Introduction for Aquaculture (Springer)",
+      "NFDB Guidelines for Intensive Pond Aeration and Biomass Management"
+    ],
+    "relatedFaqs": [
+      "surface-swimming",
+      "green-pond-water",
+      "fish-gasping-rapid-breathing",
+      "sudden-fish-mortality"
+    ]
+  },
+  {
+    "id": "green-pond-water",
+    "title": "Why is my pond water turning green?",
+    "category": "Water Quality",
+    "severity": "Warning",
+    "shortDescription": "Distinguish between healthy productive phytoplankton blooms and dangerous blue-green cyanobacteria scum.",
+    "overview": "Green coloration in pond water is typically caused by billions of microscopic single-celled algae (phytoplankton). A light, pea-green color is beneficial because it generates daytime oxygen through photosynthesis and feeds fry. However, bright fluorescent 'pea soup' green or oily surface scum indicates an excessive algal bloom, which threatens pond stability with night-time oxygen depletion and toxic crashes.",
+    "symptoms": [
+      "Water clarity drops drastically (Secchi disk visibility below 20 cm)",
+      "Blue-green oily film or streaks gathering along downwind pond banks in the afternoon",
+      "Significant diurnal pH swings: pH rising above 9.0 in sunny afternoons and falling below 7.2 before dawn",
+      "Sudden brownish or grey discoloration accompanied by a foul odor if the bloom begins dying off"
+    ],
+    "possibleCauses": [
+      "Excessive phosphorus and nitrogen runoff from overfeeding or heavy manure fertilization",
+      "High solar intensity combined with prolonged stagnation and minimal water exchange",
+      "Accumulation of soluble organic waste on the pond bottom",
+      "Dominance of cyanobacteria (Microcystis / Anabaena) in alkaline, warm waters"
+    ],
+    "identification": [
+      "Use a Secchi disk to measure water transparency. 30–40 cm is ideal; under 20 cm indicates excessive bloom",
+      "Perform a jar test: fill a clear glass jar with pond water and let it sit undisturbed for 2 hours. If algae float to the top forming a thick layer, cyanobacteria are likely dominant",
+      "Test afternoon water pH: values consistently > 9.0 confirm intensive photosynthetic activity stripping free CO2"
+    ],
+    "immediateActions": [
+      "1. Cut daily feeding ration by 30% to 50% immediately to starve the bloom of nutrient input.",
+      "2. Increase nighttime aeration to combat respiratory oxygen demands from dense algae.",
+      "3. Skim off floating surface scum from leeward pond corners using fine mesh nets.",
+      "4. Do NOT apply heavy algicides (like copper sulfate) all at once, as a sudden mass algal die-off will instantly suffocate all fish."
+    ],
+    "shortTermSolutions": [
+      "1. Perform gradual 15% to 20% water exchanges over several days to dilute cell density.",
+      "2. Apply agricultural gypsum or alum to aggregate suspended nutrients if recommended by local guidelines.",
+      "3. Introduce filter-feeding carps (such as Silver Carp) to naturally graze phytoplankton."
+    ],
+    "preventiveMeasures": [
+      "1. Keep phosphorus and nitrogen levels balanced through prudent feeding and bio-filtration.",
+      "2. Prevent nutrient-rich agricultural field runoff from entering pond dykes during monsoons.",
+      "3. Maintain biological pond depth between 1.2 to 1.8 meters to inhibit benthic light penetration."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Secchi Disk Transparency",
+        "idealRange": "30 - 45 cm",
+        "criticalLevel": "< 20 cm (excessive bloom risk), > 60 cm (clear, non-productive)",
+        "impact": "Excessive density causes night hypoxia; low density starves natural food webs."
+      },
+      {
+        "parameter": "Afternoon pH",
+        "idealRange": "7.5 - 8.5",
+        "criticalLevel": "> 9.5",
+        "impact": "Phytoplankton consume carbonic acid, shifting pH to caustic alkaline levels that dramatically heighten ammonia toxicity."
+      }
+    ],
+    "expertHelp": "Consult an aquaculture diagnostic lab if surface scum exhibits strong offensive odor or if fish display neurological tremors, which may indicate microcystin cyanotoxin release.",
+    "references": [
+      "FAO Training Series 21: Water for Freshwater Fish Culture",
+      "WorldFish Technical Bulletin on Algal Bloom Dynamics"
+    ],
+    "relatedFaqs": [
+      "low-dissolved-oxygen",
+      "high-ph-alkaline-water",
+      "foul-smelling-pond",
+      "overfeeding-effects"
+    ]
+  },
+  {
+    "id": "low-ph-acidic-water",
+    "title": "What happens when the pH level is too low?",
+    "category": "Water Quality",
+    "severity": "Critical",
+    "shortDescription": "Learn how water acidification impairs fish gill function, damages skin mucus, and releases heavy metals.",
+    "overview": "Pond water pH measures the acidity or alkalinity on a scale of 0 to 14. When pH falls below 6.5 (and especially below 5.0), the water becomes critically acidic. Acidic conditions strip the protective mucus coating of fish skin, irritate delicate gill lamellae, impair blood oxygen-binding capacity, and dissolve toxic metals like aluminum from pond soils.",
+    "symptoms": [
+      "Fish swimming erratically or darting in distress with flared opercula",
+      "Excessive secretion of cloudy, white-grey mucus over skin and eyes",
+      "Gill filaments turning brownish-grey with corroded tips",
+      "Stunted growth, lack of appetite, and reproductive failure",
+      "Gradual mortalities occurring over several days without visible external parasites"
+    ],
+    "possibleCauses": [
+      "Acid sulfate pond soils (cat clays) containing pyrites oxidized during pond drying",
+      "Heavy rainwater runoff through acidic, peaty soils or industrial rainfall",
+      "Excessive accumulation and decomposition of organic sludge generating organic acids",
+      "Total pond alkalinity below 40 mg/L CaCO3, leaving the water without buffering capacity"
+    ],
+    "identification": [
+      "Test water pH at dawn using a calibrated digital pH meter or fresh pH reagent strips",
+      "Measure Total Alkalinity using titration kits: values below 50 mg/L CaCO3 indicate dangerous vulnerability to acid spikes",
+      "Observe soil coloration: yellowish mottling (jarosite) on dykes suggests acid sulfate soil"
+    ],
+    "immediateActions": [
+      "1. Apply agricultural limestone (calcium carbonate, CaCO3) or dolomite powder at 200–300 kg per hectare dissolved in water.",
+      "2. Never use caustic quicklime (CaO) or slaked lime (Ca(OH)2) in ponds with live fish stocks, as it can cause sudden lethal alkaline shocks.",
+      "3. Stop adding organic fertilizers or manure until the pH stabilizes above 7.0.",
+      "4. Gradually introduce clean, buffered inflow water if available."
+    ],
+    "shortTermSolutions": [
+      "1. Broadcast additional agricultural lime evenly across the pond surface in split doses every 48 hours until pH reaches 7.2–7.8.",
+      "2. Increase aeration to facilitate carbon dioxide degassing.",
+      "3. Inspect and clear any decaying vegetation or leaves falling into the pond."
+    ],
+    "preventiveMeasures": [
+      "1. Lime pond bottoms thoroughly during pre-stocking preparation based on soil pH tests.",
+      "2. Build dykes with lime-treated soil to neutralize acidic runoff before it reaches the pond.",
+      "3. Maintain Total Alkalinity between 80 and 150 mg/L CaCO3 as a chemical buffer."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "pH Level",
+        "idealRange": "6.5 - 8.5",
+        "criticalLevel": "< 5.0 (lethal to carps), < 4.0 (lethal to all aquaculture species)",
+        "impact": "Mucus precipitation, gill necrosis, respiratory acidosis, and reproductive inhibition."
+      },
+      {
+        "parameter": "Total Alkalinity",
+        "idealRange": "80 - 150 mg/L CaCO3",
+        "criticalLevel": "< 40 mg/L CaCO3",
+        "impact": "Inadequate buffering capacity leaves the water susceptible to rapid pH plunges after rainfall."
+      }
+    ],
+    "expertHelp": "Consult a soil and water testing laboratory or fisheries university extension if liming fails to raise pH, indicating deep acid sulfate soil conditions requiring specialized reclamation.",
+    "references": [
+      "ICAR-CIFA Advisory on Liming and Soil Management in Aquaculture",
+      "FAO Better Management Practices for Fish Health and Water Quality"
+    ],
+    "relatedFaqs": [
+      "high-ph-alkaline-water",
+      "low-dissolved-oxygen",
+      "water-testing-frequency",
+      "maintaining-water-quality"
+    ]
+  },
+  {
+    "id": "high-ph-alkaline-water",
+    "title": "What happens when the pH level is too high?",
+    "category": "Water Quality",
+    "severity": "Critical",
+    "shortDescription": "Discover how alkaline water drives toxic un-ionized ammonia conversion and causes gill caustic damage.",
+    "overview": "When pond water pH exceeds 8.8 (and particularly above 9.5), it becomes dangerously alkaline. High pH alone irritates fish cornea and skin membranes, but its most lethal effect is chemical: it shifts non-toxic ionized ammonium (NH4+) into highly toxic un-ionized ammonia gas (NH3). At pH 9.0, ammonia is approximately 10 times more toxic than at pH 8.0 at the same temperature.",
+    "symptoms": [
+      "Fish darting, rubbing against embankments, or showing fin fraying",
+      "Corneal cloudiness or eye damage in fingerlings",
+      "Hyperactivity followed by profound lethargy and gill swelling",
+      "Mortalities occurring in mid-afternoon when sunlight and photosynthetic activity peak"
+    ],
+    "possibleCauses": [
+      "Dense phytoplankton blooms consuming all dissolved carbon dioxide (carbonic acid) during sunny afternoons",
+      "Overdosing of agricultural lime or accidental application of quicklime (calcium oxide)",
+      "High natural carbonate alkalinity combined with shallow, unshaded waters",
+      "High rate of blue-green algal photosynthesis outpacing pond respiration"
+    ],
+    "identification": [
+      "Measure pH twice daily: once at 6:00 AM (lowest) and once at 3:00 PM (highest)",
+      "If the afternoon reading exceeds 9.2 while morning is 7.5, intensive algal photosynthesis is the primary driver",
+      "Test Total Ammonia Nitrogen (TAN) immediately alongside pH to calculate un-ionized NH3 fraction"
+    ],
+    "immediateActions": [
+      "1. Dilute the pond water with fresh, lower-pH water if an abundant source is available.",
+      "2. Reduce or halt feeding immediately to avoid adding more nitrogenous waste into high-pH water.",
+      "3. Apply agricultural gypsum (calcium sulfate, CaSO4) at 100–200 kg/ha to lower pH without stripping alkalinity.",
+      "4. Safely apply dissolved humic acid or alum under local expert guidance to neutralize excess alkalinity."
+    ],
+    "shortTermSolutions": [
+      "1. Partial shading with shade netting or temporary duckweed containment to moderate light exposure.",
+      "2. Perform bottom water discharge to purge decaying, nutrient-rich sludge.",
+      "3. Aerate vigorously during the night and early morning to restore dissolved carbon dioxide."
+    ],
+    "preventiveMeasures": [
+      "1. Maintain stable phytoplankton transparency (30–40 cm) to avoid super-blooms.",
+      "2. Avoid excessive pre-stocking liming without soil testing.",
+      "3. Regularly monitor morning and afternoon pH differentials."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "pH Level",
+        "idealRange": "6.5 - 8.5",
+        "criticalLevel": "> 9.5 (toxic stress), > 10.5 (rapid gill destruction)",
+        "impact": "Caustic gill burns, eye damage, and exponential increase in toxic un-ionized ammonia."
+      },
+      {
+        "parameter": "Un-ionized Ammonia (NH3)",
+        "idealRange": "< 0.05 mg/L",
+        "criticalLevel": "> 0.1 mg/L",
+        "impact": "At pH > 9.0, up to 30–40% of total ammonia exists as lethal NH3 gas."
+      }
+    ],
+    "expertHelp": "Seek immediate advice if pH remains above 9.5 for more than two consecutive afternoons or if fish exhibit respiratory spasms, as rapid chemical buffering requires precise dosage calculations.",
+    "references": [
+      "Boyd, C.E. (1990). Water Quality in Ponds for Aquaculture",
+      "CIFA Special Bulletin on Carbonate Chemistry and Fish Pond Buffering"
+    ],
+    "relatedFaqs": [
+      "low-ph-acidic-water",
+      "high-ammonia-levels",
+      "green-pond-water",
+      "surface-swimming"
+    ]
+  },
+  {
+    "id": "high-ammonia-levels",
+    "title": "What causes ammonia levels to increase?",
+    "category": "Water Quality",
+    "severity": "Critical",
+    "shortDescription": "Understand nitrogen breakdown pathways, ammonia toxicity factors, and emergency biofilter recovery.",
+    "overview": "Ammonia is the primary waste product excreted across fish gills, supplemented by decomposing uneaten feed and fish feces. Total Ammonia Nitrogen (TAN) exists in two forms: harmless ammonium ions (NH4+) and lethal un-ionized ammonia gas (NH3). Elevated ammonia damages gills, suppresses red blood cell function, causes neurological damage, and triggers catastrophic disease outbreaks.",
+    "symptoms": [
+      "Fish refusing food completely, even during regular morning and evening feeding times",
+      "Gills exhibiting bright dark red, purple, or hyperemic clotted appearance",
+      "Fish swimming in jerky, uncoordinated, or spiraling ('corkscrew') patterns",
+      "Fraying of caudal and dorsal fins with red streaking along the body"
+    ],
+    "possibleCauses": [
+      "Overfeeding fish beyond their consumption capacity (feed protein breakdown)",
+      "Excessive stocking biomass overwhelming biological nitrifying bacteria (Nitrosomonas)",
+      "Sudden algal bloom collapse releasing large pulses of decomposed organic nitrogen",
+      "Insufficient mechanical aeration and dissolved oxygen, inhibiting the bacterial nitrification cycle",
+      "High pond water pH (>8.5) and elevated water temperatures amplifying NH3 toxicity"
+    ],
+    "identification": [
+      "Test Total Ammonia Nitrogen (TAN) using a calibrated photometer or multi-stage reagent drop kit",
+      "Record water temperature and pH simultaneously to look up the exact percentage of un-ionized NH3 using standard aquaculture conversion tables",
+      "Inspect feeding trays 45 minutes after delivery: uneaten pellets confirm overfeeding"
+    ],
+    "immediateActions": [
+      "1. STOP 100% of feeding immediately! Do not resume until TAN drops below safe species thresholds.",
+      "2. Siphon out bottom sediment and perform an emergency 30% to 40% water exchange with clean, tested water.",
+      "3. Run aerators at full power; water turbulence physically drives off gaseous ammonia into the air.",
+      "4. Apply beneficial nitrifying probiotic blends (Nitrosomonas & Nitrobacter) to accelerate biological oxidation."
+    ],
+    "shortTermSolutions": [
+      "1. If pH is above 8.5, safely buffer it down toward 7.5 to convert lethal NH3 into non-toxic NH4+.",
+      "2. Reduce fish biomass by harvesting market-size stock or splitting cohorts.",
+      "3. Clean submerged filters, bio-rings, or floating bio-media in recirculating ponds."
+    ],
+    "preventiveMeasures": [
+      "1. Use floating extruded feed pellets to visually observe fish consumption rates in real time.",
+      "2. Allow biofilters to cycle for 2 to 3 weeks before stocking dense fingerling populations.",
+      "3. Maintain Dissolved Oxygen above 5.0 mg/L to provide sufficient oxygen for nitrifying bacteria."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Total Ammonia Nitrogen (TAN)",
+        "idealRange": "< 0.5 mg/L",
+        "criticalLevel": "> 1.5 mg/L",
+        "impact": "Chronic exposure leads to branchial hyperplasia, immunosuppression, and secondary Aeromonas infections."
+      },
+      {
+        "parameter": "Un-ionized Ammonia (NH3)",
+        "idealRange": "< 0.05 mg/L",
+        "criticalLevel": "> 0.2 mg/L (acutely toxic)",
+        "impact": "Direct neurotoxin and gill membrane destroyer; fatal within hours at >0.5 mg/L."
+      }
+    ],
+    "expertHelp": "Consult a fisheries extension officer if TAN exceeds 2.0 mg/L despite water exchange, or if fish begin displaying erratic neurological spinning and hemorrhagic skin ulcers.",
+    "references": [
+      "Emerson, K. et al. (1975). Aqueous Ammonia Equilibrium Calculations",
+      "FAO Aquaculture Technical Manual: Waste Management and Nitrogen Cycles"
+    ],
+    "relatedFaqs": [
+      "overfeeding-effects",
+      "high-ph-alkaline-water",
+      "surface-swimming",
+      "fish-not-eating-anorexia"
+    ]
+  },
+  {
+    "id": "foul-smelling-pond",
+    "title": "Why does my pond water have a bad smell?",
+    "category": "Water Quality",
+    "severity": "Warning",
+    "shortDescription": "Identify the sources of hydrogen sulfide, methane, and anaerobic sludge accumulation in earthen ponds.",
+    "overview": "A healthy aquaculture pond should have an earthy, clean aroma. Pungent odors—such as rotten eggs (hydrogen sulfide), sewage, or stagnant swamp gas (methane)—indicate advanced anaerobic (oxygen-free) decomposition on the pond bottom. These gases are profoundly toxic to fish, corroding hemoglobin and causing sudden night-time die-offs.",
+    "symptoms": [
+      "Rotten-egg or sewage smell rising from pond surface, especially when bottom sediment is disturbed",
+      "Bottom-dwelling fish (such as catfish or bottom carps) avoiding the bottom and hovering mid-water",
+      "Black, putrid mud when sampling the pond bottom sediment",
+      "Sudden localized bubbling rising from the pond substrate"
+    ],
+    "possibleCauses": [
+      "Excessive accumulation of organic matter (decaying feces, uneaten feed, dead algae)",
+      "Anaerobic conditions in the bottom 10–20 cm of water where DO drops to absolute zero",
+      "Sulfate-reducing bacteria thriving in the absence of bottom aeration and dissolved oxygen",
+      "Lack of periodic pond bottom drying, tilling, and liming between crop cycles"
+    ],
+    "identification": [
+      "Collect a sediment core sample from the central feeding area: jet-black mud with an acrid odor confirms anaerobic sludge",
+      "Test Dissolved Oxygen near the pond bottom: readings under 1.5 mg/L foster anaerobic fermentation",
+      "Test water for dissolved hydrogen sulfide (H2S) using specialized low-range colorimetric kits"
+    ],
+    "immediateActions": [
+      "1. Direct bottom-aspirating aerators or submersible circulators to oxygenate the benthic boundary layer.",
+      "2. Siphon out or pump out accumulated black bottom sludge from the drain sump.",
+      "3. Cease or drastically reduce feeding by 50% until bottom water circulation is restored.",
+      "4. Apply zeolite or activated bio-charcoal to adsorb dissolved noxious gases."
+    ],
+    "shortTermSolutions": [
+      "1. Apply soil probiotics (Bacillus subtilis and Bacillus licheniformis) to biologically digest benthic sludge.",
+      "2. Perform scheduled 20% bottom-draining water flushes.",
+      "3. Broadcast agricultural limestone to stabilize benthic pH and bind organic acids."
+    ],
+    "preventiveMeasures": [
+      "1. Thoroughly drain, sun-dry, and plow pond bottoms between stocking cycles until the soil cracks 5–10 cm deep.",
+      "2. Lime dry pond bottoms with agricultural limestone at 500–1,000 kg/ha before refilling.",
+      "3. Avoid heavy organic manure fertilization during the final two months of grow-out."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Hydrogen Sulfide (H2S)",
+        "idealRange": "< 0.01 mg/L",
+        "criticalLevel": "> 0.03 mg/L",
+        "impact": "Inactivates cytochrome oxidase, blocking cellular respiration even in well-oxygenated water."
+      },
+      {
+        "parameter": "Benthic Dissolved Oxygen",
+        "idealRange": "> 3.0 mg/L at pond bottom",
+        "criticalLevel": "< 1.0 mg/L",
+        "impact": "Triggers rapid anaerobic decomposition and toxic volatile gas formation."
+      }
+    ],
+    "expertHelp": "Seek advice from an aquaculture soil scientist or diagnostic laboratory if hydrogen sulfide levels remain detectable, as dredging or chemical oxidation may be necessary.",
+    "references": [
+      "Boyd, C.E. (1995). Bottom Soils, Sediment, and Pond Aquaculture",
+      "NFDB SOP for Pond Preparation and Benthic Health Management"
+    ],
+    "relatedFaqs": [
+      "prevent-organic-waste",
+      "low-dissolved-oxygen",
+      "overfeeding-effects",
+      "high-ammonia-levels"
+    ]
+  },
+  {
+    "id": "sudden-fish-mortality",
+    "title": "Why are my fish dying suddenly?",
+    "category": "Fish Health",
+    "severity": "Critical",
+    "shortDescription": "Acute mortality is an emergency. Learn how to diagnose catastrophic oxygen drops, toxic spills, or virulent pathogens.",
+    "overview": "Sudden, acute mortality—where dozens or hundreds of fish perish within a few hours—is a code-red aquaculture emergency. While gradual daily mortality often indicates chronic parasite infections or minor water degradation, acute mass die-offs are typically driven by acute nocturnal hypoxia, toxic chemical introduction, severe ammonia/nitrite toxicity, or hyper-virulent bacterial septicemia.",
+    "symptoms": [
+      "Large numbers of dead fish floating or washed up along pond dykes within a single morning",
+      "Fish displaying wide gaping mouths, flared gills, or curved spinal deformities",
+      "Dead fish showing bright red hemorrhages on belly, vent, and fin bases",
+      "All species and sizes dying simultaneously (suggests environmental poison or total hypoxia)"
+    ],
+    "possibleCauses": [
+      "Severe early morning dissolved oxygen depletion (total oxygen crash)",
+      "Agricultural pesticide, insecticide, or industrial chemical runoff entering pond inflow",
+      "Acute ammonia toxicity or nitrite brown blood poisoning",
+      "Virulent infectious diseases (e.g., Aeromonas hydrophila septicemia, Tilapia Lake Virus / TiLV)",
+      "Sudden toxic cyanobacteria algal collapse releasing endotoxins"
+    ],
+    "identification": [
+      "Check time of mortality: mortalities occurring strictly at dawn point to hypoxia; mortalities occurring midday point to high pH, high temperature, or pesticides",
+      "Examine mortality selectivity: if only one species dies (e.g. only tilapia die, catfish survive), suspect species-specific viral or bacterial pathogens. If all aquatic life dies, suspect chemical poison or zero oxygen",
+      "Test DO, pH, Ammonia, and Nitrite on-site immediately without waiting for lab transport"
+    ],
+    "immediateActions": [
+      "1. Turn on ALL mechanical aeration equipment and pumps at maximum power instantly.",
+      "2. Immediately shut off incoming external water channels if pesticide runoff is suspected.",
+      "3. Remove and safely dispose of all dead fish (burn or bury with quicklime away from water bodies) to prevent disease spread.",
+      "4. Collect 3 to 5 moribund (sick but alive) fish in oxygenated bags for immediate veterinary laboratory necropsy."
+    ],
+    "shortTermSolutions": [
+      "1. Perform emergency partial water exchange using a clean, verified water source.",
+      "2. Completely halt all feeding until mortality stops and water quality stabilizes.",
+      "3. Isolate surviving fish cohorts and install footbaths with potassium permanganate for biosecurity."
+    ],
+    "preventiveMeasures": [
+      "1. Install bunds and diversion ditches around pond perimeter to block agricultural chemical wash-off during rain.",
+      "2. Implement strict quarantine protocols (14 days minimum) for all newly purchased fingerlings.",
+      "3. Maintain 24/7 night aeration and emergency power generator readiness."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Dissolved Oxygen",
+        "idealRange": "> 5.0 mg/L",
+        "criticalLevel": "< 1.5 mg/L",
+        "impact": "Acute suffocation; primary cause of sudden dawn die-offs."
+      },
+      {
+        "parameter": "Total Ammonia Nitrogen",
+        "idealRange": "< 0.5 mg/L",
+        "criticalLevel": "> 2.0 mg/L",
+        "impact": "Internal hemorrhages, nervous system collapse, and acute chemical mortality."
+      }
+    ],
+    "expertHelp": "Immediately alert your state fisheries department, certified aquatic veterinarian, or animal disease diagnostic lab. Do NOT sell or distribute dying fish for human consumption.",
+    "references": [
+      "OIE Aquatic Animal Health Code: Emergency Disease Outbreak Procedures",
+      "FAO Fisheries Circular: Field Diagnosis of Fish Disease Outbreaks"
+    ],
+    "relatedFaqs": [
+      "low-dissolved-oxygen",
+      "high-ammonia-levels",
+      "red-patches-wounds",
+      "fish-gasping-rapid-breathing"
+    ]
+  },
+  {
+    "id": "white-spots-ich",
+    "title": "Why do fish develop white spots on their bodies?",
+    "category": "Fish Health",
+    "severity": "Warning",
+    "shortDescription": "Diagnose White Spot Disease (Ichthyophthiriasis), its ciliate life cycle, and safe aquaculture salt interventions.",
+    "overview": "Small, granular white specks resembling grains of salt on fish skin, fins, and gills are the hallmark sign of White Spot Disease ('Ich'), caused by the parasitic ciliated protozoan Ichthyophthirius multifiliis. The parasite burrows beneath the outer skin layer, where it is shielded from many topical chemicals. Left untreated, it spreads rapidly across the population, leading to secondary bacterial infections and high fingerling mortality.",
+    "symptoms": [
+      "Distinct, raised white spots (0.5 to 1.0 mm) sprinkled across fins, scales, and eyes",
+      "Fish rubbing or scratching their bodies ('flashing') against pond walls, mesh, or bottom substrate",
+      "Clamped fins held tightly against the body",
+      "Lethargy, drifting aimlessly near the edges, and respiratory distress due to gill trophonts"
+    ],
+    "possibleCauses": [
+      "Introduction of unquarantined carrier fingerlings or live feed into the pond",
+      "Sudden water temperature drops (e.g. post-monsoon cold snaps) compromising fish immune function",
+      "Poor water quality, overcrowding, and organic muck accumulation stressing fish",
+      "Contaminated harvesting nets, buckets, or equipment transferred between infected ponds"
+    ],
+    "identification": [
+      "Catch 2–3 affected fish and observe under bright light or hand magnifier: white spots are round cysts (trophonts)",
+      "Perform a wet-mount skin scrap or gill biopsy under a compound microscope (40x–100x): look for horseshoe-shaped macronucleus rotating with cilia",
+      "Distinguish from Lymphocystis (which produces larger, irregular, cauliflower-like nodular viral growths)"
+    ],
+    "immediateActions": [
+      "1. Isolate the affected pond or nursery tank; restrict all equipment movement.",
+      "2. For nursery tanks and concrete ponds: apply coarse un-iodized rock salt at 2.0 to 3.0 kg per 1,000 liters (2–3 ppt) for 7–10 days.",
+      "3. Increase water aeration, as parasitized gills suffer impaired oxygen absorption.",
+      "4. If temperature is controllable, gradually raise water temperature to 28°C–30°C to accelerate the parasite life cycle into the free-swimming vulnerable theront stage."
+    ],
+    "shortTermSolutions": [
+      "1. Siphon bottom sediment daily to remove fallen reproductive cysts (tomonts) before they hatch.",
+      "2. For earthen ponds, consult certified specialists for approved formal pond treatments (e.g. managed potassium permanganate baths).",
+      "3. Support recovery with vitamin C supplemented feed to rebuild protective mucosal barriers."
+    ],
+    "preventiveMeasures": [
+      "1. Quarantine all new seed stock for at least 14 days before introducing them to grow-out ponds.",
+      "2. Disinfect all fishing nets, boots, and harvesting gear in a 10 ppm potassium permanganate dip.",
+      "3. Avoid sudden cold water inflows and maintain dissolved oxygen above 5.0 mg/L."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Water Temperature",
+        "idealRange": "26°C - 30°C",
+        "criticalLevel": "< 20°C (accelerates infection latency)",
+        "impact": "Cold temperatures slow fish immune responses while prolonging parasite life stages."
+      },
+      {
+        "parameter": "Dissolved Oxygen",
+        "idealRange": "> 5.0 mg/L",
+        "criticalLevel": "< 3.5 mg/L",
+        "impact": "Trophonts on gill filaments drastically decrease oxygen diffusion capacity."
+      }
+    ],
+    "expertHelp": "Consult an aquatic animal health veterinarian if salt treatments do not show reduction in spot count after 5 days, or if secondary bacterial ulcers develop on the fish flanks.",
+    "references": [
+      "FAO Fish Disease Diagnostic Series: Protozoan Parasites of Aquaculture",
+      "CIFA Extension Bulletin on Ichthyophthiriasis Management"
+    ],
+    "relatedFaqs": [
+      "fish-flashing-rubbing",
+      "red-patches-wounds",
+      "sudden-fish-mortality",
+      "unusual-swimming-patterns"
+    ]
+  },
+  {
+    "id": "red-patches-wounds",
+    "title": "Why are fish developing red patches or wounds?",
+    "category": "Fish Health",
+    "severity": "Critical",
+    "shortDescription": "Diagnose bacterial septicemia, Columnaris, handling abrasion, and ulcerative syndromes.",
+    "overview": "Red patches, open sores, bleeding fin bases, and skin ulcers indicate capillary rupture and tissue necrosis. Common causes range from mechanical damage during netting to bacterial infections such as Aeromonas hydrophila (Hemorrhagic Septicemia), Flavobacterium columnare (Columnaris), or Epizootic Ulcerative Syndrome (EUS). Because open lesions allow opportunistic pathogens to enter the bloodstream, immediate intervention is essential.",
+    "symptoms": [
+      "Red petechial hemorrhages along the belly, mouth, vent, and fin bases",
+      "Open, crater-like necrotic skin ulcers with red margins and white fungal tufts",
+      "Frayed, bleeding, or eroded tail and pectoral fins (fin rot)",
+      "Abdominal dropsy (bloating) and exophthalmia (bulging pop-eyes) in severe systemic cases"
+    ],
+    "possibleCauses": [
+      "Opportunistic bacterial infection by Aeromonas hydrophila or Pseudomonas triggered by poor water quality",
+      "Columnaris disease attacking skin and gill surfaces in warm, crowded ponds",
+      "Rough handling, poor netting, or predator attacks (birds, crabs) creating skin lacerations",
+      "High levels of caustic un-ionized ammonia or acidic water corroding the protective mucus barrier"
+    ],
+    "identification": [
+      "Examine lesion distribution: superficial linear scratches point to net abrasion; deep circular ulcers surrounded by red halos point to bacterial/fungal disease",
+      "Check water quality: elevated ammonia (>1.0 mg/L) or nitrite (>0.5 mg/L) frequently precedes bacterial septicemia outbreaks",
+      "Submit fresh moribund specimens to an authorized fish pathology laboratory for bacteriological culture and antibiotic sensitivity testing"
+    ],
+    "immediateActions": [
+      "1. Immediately isolate visibly ulcerated fish to prevent cannibalism and bacterial shedding.",
+      "2. Perform a 25% clean water exchange to dilute bacterial loads in the pond.",
+      "3. Halt high-protein feeding; feed lightly with easily digestible pellets.",
+      "4. Apply aquaculture-grade coarse salt (1.0–2.0 g/L) to concrete or nursery systems to relieve osmotic stress on ulcerated tissue."
+    ],
+    "shortTermSolutions": [
+      "1. Under veterinary guidance, administer licensed anti-bacterial medicated feed formulated to exact biomass requirements.",
+      "2. Apply potassium permanganate (KMnO4) at 2.0 mg/L in earthen ponds to reduce bacterial pressure.",
+      "3. Eliminate sharp obstructions, protruding pipes, or predatory birds from the pond area."
+    ],
+    "preventiveMeasures": [
+      "1. Handle fish with soft knotless netting and avoid handling during peak afternoon heat.",
+      "2. Dip harvested or transferred fingerlings in a 2% non-iodized salt bath for 2–3 minutes before stocking.",
+      "3. Maintain biological water quality and avoid high organic sediment buildup."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Total Ammonia Nitrogen (TAN)",
+        "idealRange": "< 0.5 mg/L",
+        "criticalLevel": "> 1.0 mg/L",
+        "impact": "Suppresses lymphocyte production, enabling sub-clinical bacteria to invade skin lesions."
+      },
+      {
+        "parameter": "Dissolved Oxygen",
+        "idealRange": "> 5.0 mg/L",
+        "criticalLevel": "< 3.0 mg/L",
+        "impact": "Hypoxic fish cannot heal epithelial lesions, accelerating bacterial proliferation."
+      }
+    ],
+    "expertHelp": "Immediately consult an aquatic veterinarian or certified aquaculture pathologist. Do not indiscriminately dump agricultural antibiotics into the pond, which causes antibiotic resistance and environmental contamination.",
+    "references": [
+      "NACA/FAO Guidelines for Health Management in Asian Aquaculture",
+      "ICAR-CIFA Handbook on Freshwater Fish Diseases and Bacterial Pathology"
+    ],
+    "relatedFaqs": [
+      "white-spots-ich",
+      "sudden-fish-mortality",
+      "high-ammonia-levels",
+      "unusual-swimming-patterns"
+    ]
+  },
+  {
+    "id": "unusual-swimming-patterns",
+    "title": "Why are fish showing unusual swimming patterns?",
+    "category": "Fish Health",
+    "severity": "Warning",
+    "shortDescription": "Identify causes of corkscrew spinning, flashing, listing, and sluggish drift in aquaculture ponds.",
+    "overview": "Normal fish swim with rhythmic, coordinated fin and body movements. Unusual swimming patterns—such as corkscrew spinning, swimming upside down or on their sides (listing), head-standing, vertical drift, or erratic darting—are reliable indicators of neurological distress, swim bladder dysfunction, inner ear damage, or severe chemical poisoning.",
+    "symptoms": [
+      "Corkscrew swimming (spinning continuously along the long axis)",
+      "Inability to maintain balance; floating upside down or listing to one side",
+      "Erratic, frenzied darting followed by motionless sinking to the bottom",
+      "Loss of schooling behavior; swimming isolated near the dykes"
+    ],
+    "possibleCauses": [
+      "Acute ammonia toxicity or pesticide exposure triggering neurological convulsions",
+      "Swim bladder inflammation or bacterial infection affecting hydrostatic balance",
+      "Viral infections (e.g. Viral Nervous Necrosis / VNN in susceptible species)",
+      "Severe internal parasite infestation in the brain or sensory organs (e.g. Myxosporean parasites)",
+      "Hypothermia or sudden thermal shock from transferring fish without proper acclimatization"
+    ],
+    "identification": [
+      "Observe if the balance issue is buoyant (fish floats involuntarily at the surface) or negative (fish sinks and struggles to rise)",
+      "Test water parameters for sudden spikes in ammonia, nitrite, or pH extremes",
+      "Inquire whether nearby agricultural fields were recently sprayed with organophosphate or pyrethroid pesticides"
+    ],
+    "immediateActions": [
+      "1. Isolate disoriented fish into a clean, well-aerated nursery tank with shallow water (20–30 cm depth).",
+      "2. Perform a 30% clean water exchange in the main pond to remove potential dissolved toxins.",
+      "3. Stop all feeding immediately until normal swimming behavior returns.",
+      "4. Maximize mechanical aeration to support metabolic detoxification."
+    ],
+    "shortTermSolutions": [
+      "1. If pesticide drift is suspected, apply activated carbon or specialized bio-remediation binders.",
+      "2. For swim bladder distress, reduce water depth in holding tanks to minimize hydrostatic pressure on fish.",
+      "3. Add un-iodized salt at 1–2 g/L to relieve osmotic imbalance."
+    ],
+    "preventiveMeasures": [
+      "1. Acclimatize new fingerlings gradually (over 30–45 minutes) to pond temperature and pH before release.",
+      "2. Erect protective windbreaks and dyke borders around ponds near agricultural spraying zones.",
+      "3. Maintain stable water chemistry and avoid rapid water exchanges exceeding 30% in a single day."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Water Temperature Differential",
+        "idealRange": "< 2°C change per hour",
+        "criticalLevel": "> 5°C sudden change",
+        "impact": "Triggers thermal shock, neuromuscular tetany, and swim bladder deflation."
+      },
+      {
+        "parameter": "Nitrite (NO2-)",
+        "idealRange": "< 0.1 mg/L",
+        "criticalLevel": "> 0.5 mg/L",
+        "impact": "Deprives brain tissue of oxygen, inducing disoriented spinning and lethargy."
+      }
+    ],
+    "expertHelp": "Consult an aquaculture disease diagnostic center if fish continue corkscrewing across multiple ponds, as viral or protozoan nervous infections require specialized lab confirmation.",
+    "references": [
+      "FAO Fish Health Manual: Diagnostic Guide for Neurological and Swim Bladder Disorders",
+      "Aquaculture Research Bulletin on Pesticide Toxicity in Freshwater Fishes"
+    ],
+    "relatedFaqs": [
+      "high-ammonia-levels",
+      "sudden-fish-mortality",
+      "fish-flashing-rubbing",
+      "surface-swimming"
+    ]
+  },
+  {
+    "id": "fish-not-eating-anorexia",
+    "title": "Why are my fish not eating?",
+    "category": "Fish Behaviour",
+    "severity": "Warning",
+    "shortDescription": "Loss of appetite is the earliest warning sign of water deterioration, disease onset, or thermal stress.",
+    "overview": "Fish are opportunistic feeders with robust appetites during optimal conditions. When fish suddenly ignore feed or take significantly longer to consume regular rations (anorexia), it is the most dependable early warning indicator that something is wrong in the pond environment, well before mortalities begin.",
+    "symptoms": [
+      "Pellets floating or sinking untouched after regular feeding sessions",
+      "Absence of typical vigorous surface feeding splashes",
+      "Fish remaining submerged or retreating when feed is broadcast",
+      "Leftover feed drifting toward pond corners and decaying"
+    ],
+    "possibleCauses": [
+      "Sub-clinical water quality deterioration (DO dropping below 4.0 mg/L, elevated ammonia or nitrite)",
+      "Sudden drop in water temperature (metabolic digestion slows drastically below 22°C for tropical species)",
+      "Onset of bacterial, viral, or heavy parasite infection",
+      "Spoiled, stale, or moldy feed containing mycotoxins (e.g. aflatoxin from damp feed bags)",
+      "Severe acute stress from recent predator disturbance, seining, or rough netting"
+    ],
+    "identification": [
+      "Test Dissolved Oxygen, pH, Ammonia, and Nitrite immediately before feeding",
+      "Check water temperature: tropical species like Nile Tilapia and African Catfish consume 50% less feed when water drops below 24°C",
+      "Inspect feed pellets: smell for mold/mustiness and check manufacturing and expiration dates",
+      "Observe 3–5 fish closely for early external signs of disease (white spots, fin rot, cloudy eyes)"
+    ],
+    "immediateActions": [
+      "1. STOP FEEDING immediately! Do not force feed or throw extra pellets into the pond.",
+      "2. Scoop out all uneaten floating feed using fine hand nets to prevent it from decaying into ammonia.",
+      "3. Increase mechanical aeration to boost fish metabolic activity and water quality.",
+      "4. Verify all water quality parameters before considering any feed resumption."
+    ],
+    "shortTermSolutions": [
+      "1. When resuming feeding, offer only 20% of normal ration to test the feeding response.",
+      "2. Switch to a fresh batch of high-quality feed stored in a dry, ventilated room.",
+      "3. Adjust feeding time to warmer mid-morning hours (e.g. 10:00 AM) rather than chilly early dawn."
+    ],
+    "preventiveMeasures": [
+      "1. Always use floating pellets to monitor appetite in real time.",
+      "2. Store commercial feed bags on wooden pallets off concrete floors in cool, rodent-free storage.",
+      "3. Follow temperature-adjusted feeding charts rather than rigid calendar schedules."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Water Temperature",
+        "idealRange": "26°C - 32°C (Tilapia/Catfish)",
+        "criticalLevel": "< 20°C (anorexia), > 35°C (thermal stress)",
+        "impact": "Fish digestion enzyme kinetics correlate directly with ambient water temperature."
+      },
+      {
+        "parameter": "Dissolved Oxygen",
+        "idealRange": "> 5.0 mg/L",
+        "criticalLevel": "< 3.5 mg/L",
+        "impact": "Digesting food requires 30–50% more oxygen; fish naturally refuse food when DO is low to conserve oxygen."
+      }
+    ],
+    "expertHelp": "Consult a fish nutritionist or aquaculture veterinarian if fish refuse high-quality feed for more than 48 hours despite ideal water quality parameters, as internal systemic infections may be developing.",
+    "references": [
+      "FAO Training Manual on Fish Nutrition and Feeding in Small-Scale Aquaculture",
+      "NFDB Advisory on Feeding Management and Appetite Diagnostics"
+    ],
+    "relatedFaqs": [
+      "overfeeding-effects",
+      "accumulated-leftover-feed",
+      "low-dissolved-oxygen",
+      "high-ammonia-levels"
+    ]
+  },
+  {
+    "id": "fish-crowding-corner",
+    "title": "Why are fish gathering in one corner of the pond?",
+    "category": "Fish Behaviour",
+    "severity": "Warning",
+    "shortDescription": "Discover why fish school tightly near pond banks, corners, or inflow streams.",
+    "overview": "Fish naturally distribute across suitable pond zones according to species habits. When fish cluster abnormally in a dense group in one specific corner or along a single embankment, they are actively responding to localized environmental conditions—most often seeking localized oxygen, escaping toxic currents, sheltering from predatory pressure, or gravitating toward water inflows.",
+    "symptoms": [
+      "Hundreds of fish packed tightly into one shallow corner of the pond",
+      "Refusal to disperse even when approached by farm workers",
+      "Fin nipping and aggressive crowding among tightly clustered fish",
+      "Fish facing into incoming water streams or fountain discharge areas"
+    ],
+    "possibleCauses": [
+      "Pond stratification where oxygen is completely depleted in 80% of the pond, leaving only one oxygenated corner",
+      "Direct attraction to incoming clean, aerated canal or borewell water inflow pipes",
+      "Predator presence (such as cormorants, herons, otters, or large predatory fish) driving fish to seek refuge",
+      "Strong prevailing wind driving surface plankton and microscopic prey into the leeward pond corner",
+      "Thermal refuge seeking (congregating in sun-warmed shallows during cold mornings, or seeking shade in hot afternoons)"
+    ],
+    "identification": [
+      "Measure Dissolved Oxygen at multiple points across the pond (center, corners, inflow, drain) to detect oxygen stratification",
+      "Check water temperature differences between the corner where fish cluster and the center of the pond",
+      "Inspect the surrounding area for predator footprints, bird droppings, or damaged bird netting"
+    ],
+    "immediateActions": [
+      "1. Turn on central aerators to break thermal and chemical stratification and equalize water quality throughout the pond.",
+      "2. Check the inflow water quality: ensure incoming water is free from silt, pesticides, and heavy metals.",
+      "3. Install bird scaring lines, overhead netting, or ribbons if predator bird pressure is observed.",
+      "4. Do not feed densely packed fish in the corner; broadcast feed evenly once fish disperse."
+    ],
+    "shortTermSolutions": [
+      "1. Reposition aerators to create a gentle circular current that eliminates stagnant dead zones in corners.",
+      "2. Deepen shallow corners to prevent temperature extremes and predator vulnerability.",
+      "3. Clean perimeter vegetation around dykes that provides hiding cover for predatory animals."
+    ],
+    "preventiveMeasures": [
+      "1. Design ponds with rounded corners where possible to prevent stagnant dead-water eddies.",
+      "2. Ensure aerator placement provides uniform mixing across the entire pond volume.",
+      "3. Maintain perimeter fencing and overhead bird protection."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Dissolved Oxygen Stratification",
+        "idealRange": "< 1.0 mg/L difference between pond zones",
+        "criticalLevel": "> 3.0 mg/L variance between surface and bottom",
+        "impact": "Forces fish into small habitable pockets, causing overcrowding stress."
+      },
+      {
+        "parameter": "Pond Water Depth",
+        "idealRange": "1.2 - 1.8 meters",
+        "criticalLevel": "< 0.8 meters (susceptible to rapid thermal swings)",
+        "impact": "Shallow water overheats and cools rapidly, driving unnatural clustering."
+      }
+    ],
+    "expertHelp": "Consult an aquaculture engineer or farm advisor if water stratification persists despite aeration, indicating poor pond depth geometry or defective drainage layout.",
+    "references": [
+      "FAO Aquaculture Engineering Manual: Pond Design and Water Circulation",
+      "CIFA Farmers Advisory on Pond Stratification and Behavioural Stress"
+    ],
+    "relatedFaqs": [
+      "surface-swimming",
+      "low-dissolved-oxygen",
+      "fish-gasping-rapid-breathing",
+      "unusual-swimming-patterns"
+    ]
+  },
+  {
+    "id": "fish-flashing-rubbing",
+    "title": "Why are fish rubbing their bodies against pond surfaces?",
+    "category": "Fish Behaviour",
+    "severity": "Warning",
+    "shortDescription": "Flashing is a classic defense reflex against external skin parasites, gill flukes, and chemical burns.",
+    "overview": "When fish roll sideways and rapidly scrape their flanks or bellies against pond embankments, aerator stands, or bottom substrate, it creates a brief silvery flash of light (known in aquaculture as 'flashing'). This behavior is an involuntary attempt by the fish to scratch off irritating external parasites or relieve intense itching caused by caustic chemical burns.",
+    "symptoms": [
+      "Fish quickly rolling onto their sides and scraping against pond walls or bottoms",
+      "Silvery reflections flashing beneath the surface throughout the day",
+      "Fins flicking rapidly; fish jumping out of the water unexpectedly",
+      "Development of secondary red scratches, scales dislodged, or cloudy patches on the flanks"
+    ],
+    "possibleCauses": [
+      "External ciliate parasites such as Ichthyophthirius (White Spot), Trichodina, or Chilodonella",
+      "Gill and skin monogenean flukes (Dactylogyrus or Gyrodactylus)",
+      "Crustacean parasites such as Argulus (fish lice) or Lernaea (anchor worms)",
+      "High concentrations of toxic un-ionized ammonia or extreme pH levels causing chemical burns on skin mucus",
+      "High levels of suspended abrasive silt or clay particles irritating the gills"
+    ],
+    "identification": [
+      "Catch 3–4 flashing fish and inspect closely with a magnifying glass for visible parasites (such as disc-like Argulus or thread-like anchor worms)",
+      "Take mucus scrapings from behind the pectoral fin and examine under a microscope (100x) for microscopic protozoans or flukes",
+      "Test water pH and ammonia immediately to rule out chemical irritation"
+    ],
+    "immediateActions": [
+      "1. Test water quality immediately to confirm or rule out ammonia spikes or caustic pH extremes.",
+      "2. If in a nursery or concrete tank: administer an un-iodized coarse salt bath at 2–3 g/L for 5–7 days.",
+      "3. Siphon bottom sludge to remove shed parasite eggs and juvenile stages.",
+      "4. Do not transfer any nets, buckets, or equipment to other ponds to prevent cross-contamination."
+    ],
+    "shortTermSolutions": [
+      "1. For verified monogenean flukes or protozoans in earthen ponds, apply veterinary-prescribed bath treatments (e.g., regulated potassium permanganate at 2 mg/L).",
+      "2. For crustacean parasites (Argulus), remove visible adults and consult an aquatic vet for approved chitin-inhibitor treatments.",
+      "3. Enhance natural fish immunity by supplementing feed with vitamin C and probiotics."
+    ],
+    "preventiveMeasures": [
+      "1. Strictly quarantine new fingerlings for 14 days and treat with prophylactic salt baths before stocking.",
+      "2. Eradicate wild trash fish and aquatic birds that serve as intermediate hosts for crustacean parasites.",
+      "3. Disinfect harvesting gear and hand nets in iodine or chlorine solutions between uses."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Suspended Solids / Turbidity",
+        "idealRange": "< 25 mg/L (non-algal)",
+        "criticalLevel": "> 100 mg/L",
+        "impact": "Abrasive clay particles score mucus membranes, predisposing skin to parasite adhesion."
+      },
+      {
+        "parameter": "pH",
+        "idealRange": "6.5 - 8.5",
+        "criticalLevel": "< 5.5 or > 9.0",
+        "impact": "Corrosive chemical stress mimics parasite irritation and triggers identical flashing behavior."
+      }
+    ],
+    "expertHelp": "Seek immediate laboratory assistance from a certified aquatic health professional for accurate microscopic parasite identification. Avoid unverified commercial pesticide mixtures.",
+    "references": [
+      "FAO Health Management in Asian Aquaculture (Technical Paper 360)",
+      "CIFA Diagnostic Manual: Parasitic Diseases of Indian Major Carps"
+    ],
+    "relatedFaqs": [
+      "white-spots-ich",
+      "red-patches-wounds",
+      "unusual-swimming-patterns",
+      "high-ammonia-levels"
+    ]
+  },
+  {
+    "id": "fish-gasping-rapid-breathing",
+    "title": "Why are fish gasping or breathing rapidly?",
+    "category": "Fish Behaviour",
+    "severity": "Critical",
+    "shortDescription": "Rapid opercular movement and gasping signify acute respiratory stress, gill damage, or nitrite poisoning.",
+    "overview": "Fish breathe by drawing water through their mouths and pumping it across gill filaments to extract dissolved oxygen. When fish exhibit rapid opercular movement (flaring gill covers at double their normal rate) or break the surface gasping for air, it indicates that blood oxygen delivery has critically broken down—either from a lack of oxygen in the water or a chemical barrier preventing blood from transporting oxygen.",
+    "symptoms": [
+      "Opercula (gill covers) opening and closing rapidly and forcefully",
+      "Fish hovering near the surface or positioning themselves directly in the current of aerators",
+      "Lethargy, refusal to dive when approached, and loss of equilibrium",
+      "Gill color appearing muddy brown (indicative of nitrite poisoning) or excessively pale"
+    ],
+    "possibleCauses": [
+      "Acute nocturnal hypoxia (dissolved oxygen dropping below 2.0 mg/L)",
+      "High nitrite concentrations causing Brown Blood Disease (methemoglobinemia), preventing hemoglobin from binding oxygen",
+      "Severe ammonia toxicity destroying the delicate microscopic gill lamellae",
+      "High gill parasite load (Dactylogyrus flukes or Trichodina) coating gill surfaces with excess protective mucus",
+      "Suspended fine silt or heavy organic debris clogging gill filaments"
+    ],
+    "identification": [
+      "Measure Dissolved Oxygen immediately at the exact spot where fish are gasping",
+      "If DO is normal (>5.0 mg/L) but fish are still gasping, test for Nitrite (NO2-) and Ammonia (TAN) immediately",
+      "Catch 1–2 fish and lift the operculum: if gills are chocolate brown instead of healthy bright red, confirm nitrite poisoning"
+    ],
+    "immediateActions": [
+      "1. Start all mechanical aerators and water pumps immediately at maximum output.",
+      "2. If nitrite poisoning is confirmed (brown gills): immediately broadcast coarse un-iodized aquaculture salt (NaCl) at 50–100 kg per 100,000 liters. Chloride ions competitively block nitrite absorption through gills.",
+      "3. Stop all feeding immediately to minimize metabolic oxygen consumption.",
+      "4. Pump clean, aerated water into the pond while discharging bottom water."
+    ],
+    "shortTermSolutions": [
+      "1. Maintain a chloride to nitrite ratio (Cl:NO2) of at least 10:1 until nitrite levels drop below 0.1 mg/L.",
+      "2. Siphon out decaying organic matter that feeds nitrite-producing bacteria.",
+      "3. Apply commercial nitrifying bacterial inoculants to restore the conversion of nitrite to safe nitrate."
+    ],
+    "preventiveMeasures": [
+      "1. Never stock ponds before the biological nitrifying biofilter has fully established (requires 2–3 weeks of cycling).",
+      "2. Monitor nitrite and ammonia levels weekly alongside dissolved oxygen.",
+      "3. Avoid sudden overfeeding spikes that generate nitrite surges."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Nitrite (NO2-)",
+        "idealRange": "< 0.05 mg/L (Carps/Shrimp), < 0.2 mg/L (Catfish)",
+        "criticalLevel": "> 0.5 mg/L (induces acute Brown Blood Disease)",
+        "impact": "Oxidizes blood hemoglobin into methemoglobin, causing fish to suffocate even in oxygen-saturated water."
+      },
+      {
+        "parameter": "Dissolved Oxygen",
+        "idealRange": "> 5.0 mg/L",
+        "criticalLevel": "< 2.5 mg/L",
+        "impact": "Direct environmental cause of hyperventilation and respiratory gasping."
+      }
+    ],
+    "expertHelp": "Seek immediate assistance from a fisheries extension officer if fish exhibit brown gills or continue gasping despite active aeration, as chloride buffering calculations must match pond volume accurately.",
+    "references": [
+      "Tucker, C.S. (1989). Nitrite in Aquaculture Ponds: Chemistry and Toxicity",
+      "FAO Fish Health Manual on Respiratory Pathology and Brown Blood Disease"
+    ],
+    "relatedFaqs": [
+      "surface-swimming",
+      "low-dissolved-oxygen",
+      "high-ammonia-levels",
+      "sudden-fish-mortality"
+    ]
+  },
+  {
+    "id": "water-testing-frequency",
+    "title": "How often should I check pond water quality?",
+    "category": "Pond Management",
+    "severity": "Normal",
+    "shortDescription": "Establish an effective, scientifically grounded daily and weekly water testing schedule.",
+    "overview": "Water quality parameters fluctuate dynamically in response to sunlight, feeding, stocking biomass, and weather changes. Establishing a disciplined monitoring protocol is the single most effective way to detect problems early, prevent mass mortalities, optimize feed conversion efficiency, and protect your aquaculture investment.",
+    "symptoms": [
+      "Unexpected water discoloration or sudden foul odor",
+      "Unexplained drops in daily feeding vigor",
+      "Chronic low-level mortalities going unnoticed until harvest time",
+      "Algal bloom crashes following unmonitored weather transitions"
+    ],
+    "possibleCauses": [
+      "Infrequent or sporadic testing relying only on visual appearance",
+      "Using expired, improperly stored, or uncalibrated test kits and probes",
+      "Testing only at midday when photosynthetic parameters mask nocturnal deficiencies",
+      "Lack of logbook documentation to identify trends before thresholds are breached"
+    ],
+    "identification": [
+      "Adopt a tiered monitoring schedule based on parameter volatility",
+      "Daily Criticals (Twice daily): Dissolved Oxygen and Temperature at 6:00 AM (lowest point) and 3:00 PM (highest point)",
+      "Semi-Weekly Checks (2–3 times/week): pH and Water Transparency (Secchi disk visibility)",
+      "Weekly Checks: Total Ammonia Nitrogen (TAN), Nitrite (NO2-), and Total Alkalinity"
+    ],
+    "immediateActions": [
+      "1. Acquire a reliable digital Dissolved Oxygen & Temperature meter and quality liquid drop test kits for pH, TAN, and Nitrite.",
+      "2. Designate a daily testing logbook or digital farm record system to track readings morning and afternoon.",
+      "3. Calibrate digital meters weekly using fresh standard calibration buffers (e.g. pH 7.0 and 10.0; zero-oxygen calibration for DO).",
+      "4. Establish emergency action trigger points with farm staff for immediate aeration when DO drops below 4.0 mg/L."
+    ],
+    "shortTermSolutions": [
+      "1. Train all farm workers to recognize visual water changes and fish behavioral cues alongside testing equipment.",
+      "2. Store chemical test reagents in a cool, dark location away from direct sunlight and heat.",
+      "3. Conduct extra testing immediately following heavy rainstorms, sudden cloud cover, or power outages."
+    ],
+    "preventiveMeasures": [
+      "1. Plot monthly water quality trends against feed conversion ratio (FCR) to optimize farm profitability.",
+      "2. Send water samples quarterly to a certified regional fisheries laboratory for trace mineral and heavy metal profiling.",
+      "3. Keep backup battery-powered test kits on site for continuous readiness."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Morning Dissolved Oxygen (6:00 AM)",
+        "idealRange": "> 4.5 mg/L",
+        "criticalLevel": "< 3.0 mg/L",
+        "impact": "Indicates lowest diurnal oxygen buffer; dictates early morning feeding safety."
+      },
+      {
+        "parameter": "Afternoon pH (3:00 PM)",
+        "idealRange": "7.5 - 8.5",
+        "criticalLevel": "> 9.2",
+        "impact": "Detects excessive phytoplankton blooms and heightened ammonia toxicity risk."
+      }
+    ],
+    "expertHelp": "Consult local fisheries extension officers or university aquaculture laboratories for guidance on selecting cost-effective testing equipment suited to your farm scale.",
+    "references": [
+      "Boyd, C.E. & Tucker, C.S. (1998). Pond Aquaculture Water Quality Management",
+      "NFDB Best Management Practices: Routine Water Monitoring Protocols"
+    ],
+    "relatedFaqs": [
+      "maintaining-water-quality",
+      "low-dissolved-oxygen",
+      "high-ammonia-levels",
+      "low-ph-acidic-water"
+    ]
+  },
+  {
+    "id": "maintaining-water-quality",
+    "title": "How can I maintain good pond water quality?",
+    "category": "Pond Management",
+    "severity": "Normal",
+    "shortDescription": "Master the core pillars of proactive pond management: aeration, bottom care, liming, and feeding control.",
+    "overview": "Maintaining healthy water is far easier and vastly more profitable than treating disease outbreaks or responding to emergency fish kills. Proactive water quality management combines adequate aeration, precise feeding, balanced liming, routine waste elimination, and biological stability to create an optimal growth environment.",
+    "symptoms": [
+      "Water maintaining a stable, translucent light-green color with 30–40 cm visibility",
+      "Fish feeding aggressively and consistently within 20–30 minutes of feed delivery",
+      "Stable pH between 7.2 and 8.2 across dawn and dusk",
+      "Absence of foul bottom odors or surface foam accumulation"
+    ],
+    "possibleCauses": [
+      "Neglecting regular maintenance tasks leads to gradual organic accumulation",
+      "Excessive stocking density that surpasses the pond's natural bio-carrying capacity",
+      "Irregular, unmeasured fertilization and feeding spikes",
+      "Inadequate nighttime aeration allowing biological oxygen crashes"
+    ],
+    "identification": [
+      "Review daily water quality logs: stable DO (>5 mg/L) and minimal pH fluctuation confirm good equilibrium",
+      "Inspect the bottom mud quarterly: light brown or sandy sediment indicates healthy aerobic digestion; black mud indicates anaerobic decay",
+      "Evaluate Feed Conversion Ratio (FCR): values under 1.4 for tilapia or 1.2 for catfish indicate excellent water conditions and efficient metabolism"
+    ],
+    "immediateActions": [
+      "1. Ensure nighttime aeration runs dependably from midnight to 6:00 AM.",
+      "2. Maintain strict feeding discipline: adjust feed rations daily based on weather, water temperature, and appetite.",
+      "3. Conduct planned 10% to 15% partial water exchanges every 10–14 days to refresh mineral balances.",
+      "4. Apply maintenance doses of agricultural limestone (CaCO3) at 50–100 kg/ha monthly to maintain alkalinity above 80 mg/L."
+    ],
+    "shortTermSolutions": [
+      "1. Inoculate with commercial bio-probiotics (Bacillus species) to competitively out-compete pathogenic bacteria.",
+      "2. Siphon out localized sludge buildup around feeding platforms and drainage sumps.",
+      "3. Clean perimeter embankments to allow wind action to aerate the pond surface naturally."
+    ],
+    "preventiveMeasures": [
+      "1. Dry and disinfect the pond bottom thoroughly between every production cycle.",
+      "2. Maintain species-appropriate stocking densities matched to installed mechanical aerator horsepower.",
+      "3. Install settling basins or filtration ponds for incoming water before it enters fish culture ponds."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Total Alkalinity",
+        "idealRange": "80 - 150 mg/L CaCO3",
+        "criticalLevel": "< 50 mg/L CaCO3",
+        "impact": "Serves as the chemical shock absorber against harmful pH swings."
+      },
+      {
+        "parameter": "Dissolved Oxygen",
+        "idealRange": "> 5.0 mg/L at all times",
+        "criticalLevel": "< 3.0 mg/L",
+        "impact": "Supports fish growth, natural disease immunity, and beneficial nitrifying bacteria."
+      }
+    ],
+    "expertHelp": "Participate in local fisheries department farmer field schools or consult an aquaculture professional to design an integrated water quality management schedule tailored to your farm.",
+    "references": [
+      "FAO Fisheries and Aquaculture Technical Guidelines No. 5: Aquaculture Development",
+      "ICAR-CIFA Comprehensive Guide to Freshwater Fish Pond Management"
+    ],
+    "relatedFaqs": [
+      "water-testing-frequency",
+      "prevent-organic-waste",
+      "overfeeding-effects",
+      "fish-feeding-rate"
+    ]
+  },
+  {
+    "id": "overfeeding-effects",
+    "title": "How does overfeeding affect pond health?",
+    "category": "Pond Management",
+    "severity": "Warning",
+    "shortDescription": "Understand how uneaten feed triggers ammonia surges, oxygen depletion, and financial losses.",
+    "overview": "Feed is the single largest operating expense in aquaculture (representing 60%–70% of total production costs). Overfeeding wastes money, but its biological consequences are far more damaging: uneaten pellets quickly dissolve and decompose, releasing massive pulses of nitrogen and phosphorus that trigger lethal ammonia spikes, night hypoxia, and toxic algal super-blooms.",
+    "symptoms": [
+      "Uneaten feed pellets observed floating along dykes or settling on pond bottom after 30 minutes",
+      "Sudden surge in Total Ammonia Nitrogen (TAN) and Nitrite levels",
+      "Pond water rapidly turning dark, murky pea-soup green or developing oily surface film",
+      "Dissolved oxygen levels declining sharply during early morning hours"
+    ],
+    "possibleCauses": [
+      "Calculating feed rations based on estimated fish numbers without routine sample netting to verify average body weight",
+      "Continuing full feed delivery during cloudy, rainy, or cold weather when fish metabolism slows",
+      "Broadcasting sinking pellets where feeding activity cannot be visually monitored",
+      "Ignoring early signs of fish sickness or appetite loss and continuing standard feed schedules"
+    ],
+    "identification": [
+      "Deploy feeding trays (check trays) suspended 30 cm below surface: check 45 minutes after feeding. If >5% feed remains, overfeeding has occurred",
+      "Calculate your current Feed Conversion Ratio (FCR): if FCR rises above 1.8 for carps or tilapia, substantial feed is being wasted",
+      "Test ammonia and nitrite levels 4 to 6 hours after feeding to detect post-prandial chemical spikes"
+    ],
+    "immediateActions": [
+      "1. Reduce feed ration by 50% immediately for 48 hours to allow the pond to clear accumulated metabolites.",
+      "2. Scoop out all visible uneaten pellets with fine hand nets from leeward corners.",
+      "3. Increase mechanical aeration to provide the biological oxygen required to break down wasted organic matter.",
+      "4. Perform a 20% bottom water siphon if ammonia exceeds 1.0 mg/L."
+    ],
+    "shortTermSolutions": [
+      "1. Perform sample netting of 30–50 fish to accurately update total pond biomass calculations.",
+      "2. Transition from sinking feed to floating extruded pellets to enable 100% visual feeding verification.",
+      "3. Split daily rations into 2 or 3 smaller feedings instead of one large feeding dump."
+    ],
+    "preventiveMeasures": [
+      "1. Follow strict temperature-adjusted feeding charts (reduce feed by 30% on overcast days; reduce by 50% if temp drops <22°C).",
+      "2. Never feed fish before sunrise when Dissolved Oxygen is at its daily minimum.",
+      "3. Train farm feeding staff to stop feeding the moment feeding enthusiasm visibly tapers off."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Total Ammonia Nitrogen (TAN)",
+        "idealRange": "< 0.5 mg/L",
+        "criticalLevel": "> 1.5 mg/L",
+        "impact": "Decomposing 1 kg of uneaten high-protein feed releases up to 30–40 grams of toxic ammonia into the pond."
+      },
+      {
+        "parameter": "Biological Oxygen Demand (BOD)",
+        "idealRange": "< 10 mg/L",
+        "criticalLevel": "> 20 mg/L",
+        "impact": "Bacteria consuming wasted feed pellets strip massive volumes of dissolved oxygen from the water column."
+      }
+    ],
+    "expertHelp": "Consult an aquaculture nutrition expert or fisheries extension officer to formulate species-specific feed budgets and calibrate feed conversion tables for your farm.",
+    "references": [
+      "FAO Fisheries Circular No. 977: Feed Management and Water Quality in Aquaculture",
+      "WorldFish Guidelines on Economical and Sustainable Fish Feeding"
+    ],
+    "relatedFaqs": [
+      "accumulated-leftover-feed",
+      "fish-feeding-rate",
+      "high-ammonia-levels",
+      "low-dissolved-oxygen"
+    ]
+  },
+  {
+    "id": "prevent-organic-waste",
+    "title": "How can I prevent organic waste accumulation?",
+    "category": "Pond Management",
+    "severity": "Normal",
+    "shortDescription": "Prevent thick toxic black muck layers through probiotics, bottom draining, and inter-crop drying.",
+    "overview": "Over a grow-out season, unconsumed feed, fish excreta, dead plankton, and eroded soil wash into the deepest areas of the pond, forming a thick, black, oxygen-starved sludge layer. This anaerobic sediment releases lethal hydrogen sulfide, methane, and ammonia directly into the water. Preventing waste accumulation is fundamental to maintaining high survival rates and rapid fish growth.",
+    "symptoms": [
+      "Black, putrid mud coating the pond bottom during sampling or draining",
+      "Foul swamp or rotten-egg odor when disturbing bottom sediments",
+      "Bubbles of methane gas rising spontaneously to the pond surface",
+      "Bottom-dwelling fish avoiding benthic areas and displaying inflamed red bellies"
+    ],
+    "possibleCauses": [
+      "Excessive feeding rates beyond fish consumption capacity",
+      "Continuous culture cycles without pond draining, drying, and sediment desilting",
+      "Inadequate water circulation leaving central pond regions stagnant",
+      "Heavy applications of raw animal manure that settle directly into anaerobic sludge"
+    ],
+    "identification": [
+      "Take core soil samples across the pond bottom using a hollow PVC pipe: an anaerobic black layer > 5 cm indicates critical waste accumulation",
+      "Check dissolved oxygen 10 cm above the pond bottom: values under 2.0 mg/L confirm benthic suffocation",
+      "Monitor pond depth annually: sediment accumulation can reduce effective water depth by 15–30 cm per year"
+    ],
+    "immediateActions": [
+      "1. Siphon out or pump localized black sludge from the central drainage sump.",
+      "2. Re-orient aerators to sweep waste toward the central drain while circulating oxygenated water over the bottom.",
+      "3. Reduce daily feed input by 20% to prevent adding more organic matter.",
+      "4. Apply commercial benthic probiotics (Bacillus strains) to accelerate aerobic digestion of organic matter."
+    ],
+    "shortTermSolutions": [
+      "1. Apply agricultural limestone (CaCO3) at 200–300 kg/ha to maintain an alkaline benthic pH (7.5–8.0), which favors beneficial aerobic bacteria.",
+      "2. Perform scheduled 20% bottom-draining water exchanges.",
+      "3. Introduce bottom-foraging species like Common Carp in polyculture systems to gently agitate sediment and prevent solid crusting."
+    ],
+    "preventiveMeasures": [
+      "1. Completely drain and sun-dry the pond bottom between crops until the soil cracks 5–10 cm deep (mineralizes organic waste).",
+      "2. Mechanically scrape and remove excessive accumulated sludge every 2 to 3 crops before liming.",
+      "3. Use high-digestibility extruded feeds with low ash and phosphorus content to minimize fecal waste volume."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Benthic Redox Potential (ORP)",
+        "idealRange": "> +100 mV (aerobic)",
+        "criticalLevel": "< -150 mV (strongly anaerobic)",
+        "impact": "Negative redox potential triggers active generation of hydrogen sulfide and nitrite."
+      },
+      {
+        "parameter": "Hydrogen Sulfide (H2S)",
+        "idealRange": "< 0.01 mg/L",
+        "criticalLevel": "> 0.03 mg/L",
+        "impact": "Paralyzes fish cellular respiration, causing sudden death in bottom-dwelling species."
+      }
+    ],
+    "expertHelp": "Consult an aquaculture engineer or farm mechanization specialist to install central drain systems (monk drains or clean-out sumps) that allow continuous bottom sludge purging.",
+    "references": [
+      "Boyd, C.E. (1995). Bottom Soils, Sediment, and Pond Aquaculture (Chapman & Hall)",
+      "NFDB SOP for Pond Preparation and Benthic Health Management"
+    ],
+    "relatedFaqs": [
+      "foul-smelling-pond",
+      "overfeeding-effects",
+      "maintaining-water-quality",
+      "high-ammonia-levels"
+    ]
+  },
+  {
+    "id": "fish-feeding-rate",
+    "title": "How much food should I provide to my fish?",
+    "category": "Feeding and Nutrition",
+    "severity": "Normal",
+    "shortDescription": "Master biomass calculations, body weight percentages, and temperature-adjusted feeding tables.",
+    "overview": "Fish feeding rates change dynamically throughout their life cycle. Fingerlings have high metabolic rates requiring 6%–10% of their body weight daily, while grow-out fish require only 1.5%–3.0%. Calculating feed based on accurate sample netting, water temperature, and appetite is vital to achieve rapid growth without polluting the pond.",
+    "symptoms": [
+      "Slow fish growth and wide size disparity within the cohort (underfeeding)",
+      "Feed floating or accumulating on the pond bottom after 30 minutes (overfeeding)",
+      "Ammonia spikes and deteriorating water quality after feedings",
+      "Excessive belly fat or fatty liver syndrome in harvested fish (excess carbohydrate/fat feeding)"
+    ],
+    "possibleCauses": [
+      "Feeding fixed feed quantities throughout the season without adjusting for increasing fish weight",
+      "Failing to conduct fortnightly sample netting to estimate average body weight (ABW)",
+      "Ignoring environmental factors (temperature, dissolved oxygen) that govern daily digestion speed",
+      "Inaccurate initial stocking count records leading to distorted total biomass calculations"
+    ],
+    "identification": [
+      "Perform sample netting every 14 days: weigh 30 to 50 fish together to determine Average Body Weight (ABW = Total Sample Weight / Number of Sampled Fish)",
+      "Estimate Total Biomass = ABW × Total Estimated Stocking Count (accounting for ~5% monthly mortality)",
+      "Apply species feeding percentage table: <20g fry = 6–8% body weight; 20–100g fingerlings = 4–5%; >100g grow-out = 2–3% body weight daily",
+      "Check consumption speed: all distributed feed should be 100% consumed within 20 to 30 minutes"
+    ],
+    "immediateActions": [
+      "1. Schedule a sample netting this week to re-calculate your actual pond fish biomass.",
+      "2. Adjust feed downward if water temperature is <24°C or if dissolved oxygen is <4.5 mg/L.",
+      "3. Split the calculated daily feed into 2 feedings (morning 9:00 AM and afternoon 4:00 PM) for better digestion.",
+      "4. Observe fish feeding vigor directly: if fish stop feeding before the allotted ration is finished, stop throwing feed immediately."
+    ],
+    "shortTermSolutions": [
+      "1. Use floating extruded pellets of the correct pellet diameter (1mm for fry, 2–3mm for fingerlings, 4–6mm for grow-out).",
+      "2. Install feeding trays at opposite ends of the pond to cross-check consumption.",
+      "3. Maintain a dedicated feeding log recording daily feed given, temperature, and feeding time."
+    ],
+    "preventiveMeasures": [
+      "1. Calibrate feeding rates weekly using scientifically validated species feeding charts.",
+      "2. Select high-quality commercial feeds with certified crude protein content (e.g. 30–32% for tilapia grow-out; 35–40% for catfish).",
+      "3. Withhold feeding entirely on days when netting, harvesting, or sudden weather storms occur."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Water Temperature",
+        "idealRange": "27°C - 31°C",
+        "criticalLevel": "< 22°C (reduce ration by 40%), < 18°C (stop feeding)",
+        "impact": "Controls gastric evacuation rate and nutrient assimilation efficiency."
+      },
+      {
+        "parameter": "Dissolved Oxygen at Feeding Time",
+        "idealRange": "> 5.0 mg/L",
+        "criticalLevel": "< 4.0 mg/L",
+        "impact": "Digestion elevates oxygen demand (Specific Dynamic Action); feeding in low DO causes acute distress."
+      }
+    ],
+    "expertHelp": "Consult an aquaculture nutritionist or local fisheries extension officer to generate a customized feeding chart based on your specific target market harvest weight.",
+    "references": [
+      "FAO Training Manual on Fish Nutrition and Feeding in Small-Scale Aquaculture",
+      "ICAR-CIFA Farmer Guide on Scientific Feeding Schedules for Freshwater Fishes"
+    ],
+    "relatedFaqs": [
+      "overfeeding-effects",
+      "accumulated-leftover-feed",
+      "fish-not-eating-anorexia",
+      "maintaining-water-quality"
+    ]
+  },
+  {
+    "id": "accumulated-leftover-feed",
+    "title": "What should I do if leftover feed accumulates in my pond?",
+    "category": "Feeding and Nutrition",
+    "severity": "Warning",
+    "shortDescription": "Emergency removal techniques, biofilter protection, and ration recalibration when feed goes uneaten.",
+    "overview": "Uneaten feed is a ticking biological time bomb in an aquaculture pond. High in protein and soluble carbohydrates, commercial pellets dissolve into a mushy slurry within 1 to 2 hours, releasing phosphorus into the water and feeding heterotrophic bacteria that rapidly deplete dissolved oxygen while generating toxic ammonia and nitrite.",
+    "symptoms": [
+      "Floating pellets drifting into corners and decomposing into a foamy scum",
+      "Sinking pellets forming rotting white or grey fungal patches on the pond bottom",
+      "Sudden spike in Total Ammonia Nitrogen within 6 to 12 hours of the feeding session",
+      "Dissolved oxygen dropping rapidly as decomposing bacteria proliferate"
+    ],
+    "possibleCauses": [
+      "Severe overfeeding beyond fish appetite or biomass capacity",
+      "Sudden onset of environmental stress (e.g. abrupt DO plunge, ammonia spike, or cold snap) causing fish to stop eating mid-meal",
+      "Feeding unpalatable, rancid, or moldy feed pellets",
+      "Broadcasting pellets into strong wind or surface currents that sweep feed away before fish can consume it"
+    ],
+    "identification": [
+      "Inspect the leeward pond embankments and corners 30 to 45 minutes after feeding",
+      "Use a long-handled fine mesh scoop net to check surface and shallow benthic areas for decomposing pellet mush",
+      "Test water ammonia and dissolved oxygen immediately to measure the decomposition impact"
+    ],
+    "immediateActions": [
+      "1. Physically scoop out all floating uneaten pellets immediately using fine-mesh landing nets or surface skimmers.",
+      "2. For nursery or concrete ponds: siphon the bottom feeding zone immediately to extract settled pellet slurry.",
+      "3. Completely suspend all feeding for the next 24 to 36 hours.",
+      "4. Turn on all mechanical aerators at full capacity to supply oxygen for organic waste breakdown."
+    ],
+    "shortTermSolutions": [
+      "1. Perform a 20% to 30% bottom water exchange to flush dissolved nitrogen compounds.",
+      "2. Inoculate with beneficial probiotic bacteria (Bacillus sp.) to outcompete noxious decomposition bacteria.",
+      "3. Inspect remaining feed bags in storage for moisture, insect infestation, or rancid smell before using them again."
+    ],
+    "preventiveMeasures": [
+      "1. Transition to 100% floating extruded feed pellets so uneaten feed is immediately visible.",
+      "2. Feed slowly in small batches over 15 minutes rather than dumping the full ration at once.",
+      "3. Install floating feeding rings (PVC pipe frames) to contain pellets in one designated feeding zone."
+    ],
+    "waterQualityParameters": [
+      {
+        "parameter": "Total Ammonia Nitrogen (TAN)",
+        "idealRange": "< 0.5 mg/L",
+        "criticalLevel": "> 1.5 mg/L",
+        "impact": "1 kg of uneaten 32% protein feed releases approximately 35 grams of total ammonia as it decomposes."
+      },
+      {
+        "parameter": "Dissolved Oxygen",
+        "idealRange": "> 5.0 mg/L",
+        "criticalLevel": "< 3.0 mg/L",
+        "impact": "Bacterial decomposition of leftover feed drastically increases Biological Oxygen Demand (BOD)."
+      }
+    ],
+    "expertHelp": "Consult an aquaculture specialist if ammonia spikes persist above 2.0 mg/L following a feed spill, as specialized water conditioners or emergency bio-remediation may be needed to prevent mass mortality.",
+    "references": [
+      "FAO Fisheries Circular No. 977: Feed Management and Water Quality in Aquaculture",
+      "NFDB Better Management Practices for Feed Delivery and Water Protection"
+    ],
+    "relatedFaqs": [
+      "overfeeding-effects",
+      "fish-feeding-rate",
+      "high-ammonia-levels",
+      "low-dissolved-oxygen"
+    ]
+  }
+]
+

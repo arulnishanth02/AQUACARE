@@ -1,0 +1,177 @@
+[
+  {
+    "id": "pond-1",
+    "name": "North Nursery Pond 1",
+    "species": "tilapia",
+    "volumeLiters": 50000,
+    "currentStock": 2500,
+    "createdAt": "2026-11-13T03:45:32.649Z",
+    "lastWaterQuality": {
+      "ph": 8.5,
+      "dissolvedOxygen": 3.2,
+      "ammonia": 0.8,
+      "nitrite": 0.2,
+      "temperature": 31,
+      "recordedAt": "2026-11-13T03:55:31.704Z",
+      "source": "Water Quality Lab"
+    },
+    "history": [
+      {
+        "ph": 7.2,
+        "dissolvedOxygen": 5.5,
+        "ammonia": 0.04,
+        "nitrite": 0.02,
+        "temperature": 28,
+        "recordedAt": "2026-11-13T02:45:32.650Z",
+        "source": "Water Quality Lab"
+      },
+      {
+        "ph": 7.4,
+        "dissolvedOxygen": 5.8,
+        "ammonia": 0.03,
+        "nitrite": 0.01,
+        "temperature": 27.8,
+        "recordedAt": "2026-11-12T03:45:32.650Z",
+        "source": "Water Quality Lab"
+      },
+      {
+        "ph": 8.5,
+        "dissolvedOxygen": 3.2,
+        "ammonia": 0.8,
+        "nitrite": 0.2,
+        "temperature": 31,
+        "recordedAt": "2026-11-13T03:48:44.230Z",
+        "source": "Water Quality Lab"
+      },
+      {
+        "ph": 7.2,
+        "dissolvedOxygen": 5.5,
+        "ammonia": 0.04,
+        "nitrite": 0.02,
+        "temperature": 28,
+        "recordedAt": "2026-11-13T03:50:33.592Z",
+        "source": "Water Quality Lab"
+      },
+      {
+        "ph": 7.2,
+        "dissolvedOxygen": 5.5,
+        "ammonia": 0.04,
+        "nitrite": 0.02,
+        "temperature": 28,
+        "recordedAt": "2026-11-13T03:50:33.594Z",
+        "source": "Water Quality Lab"
+      },
+      {
+        "ph": 7.2,
+        "dissolvedOxygen": 5.5,
+        "ammonia": 0.04,
+        "nitrite": 0.02,
+        "temperature": 28,
+        "recordedAt": "2026-11-13T03:54:58.048Z",
+        "source": "Water Quality Lab"
+      },
+      {
+        "ph": 7.2,
+        "dissolvedOxygen": 5.5,
+        "ammonia": 0.04,
+        "nitrite": 0.02,
+        "temperature": 28,
+        "recordedAt": "2026-11-13T03:54:58.049Z",
+        "source": "Water Quality Lab"
+      },
+      {
+        "ph": 7.2,
+        "dissolvedOxygen": 5.5,
+        "ammonia": 0.04,
+        "nitrite": 0.02,
+        "temperature": 28,
+        "recordedAt": "2026-11-13T03:55:12.012Z",
+        "source": "Water Quality Lab"
+      },
+      {
+        "ph": 7.2,
+        "dissolvedOxygen": 5.5,
+        "ammonia": 0.04,
+        "nitrite": 0.02,
+        "temperature": 28,
+        "recordedAt": "2026-11-13T03:55:12.014Z",
+        "source": "Water Quality Lab"
+      },
+      {
+        "ph": 8.5,
+        "dissolvedOxygen": 3.2,
+        "ammonia": 0.8,
+        "nitrite": 0.2,
+        "temperature": 31,
+        "recordedAt": "2026-11-13T03:55:31.704Z",
+        "source": "Water Quality Lab"
+      }
+    ]
+  },
+  {
+    "id": "pond-2",
+    "name": "Grow-Out Pond 2 (Commercial Catfish)",
+    "species": "catfish",
+    "volumeLiters": 150000,
+    "currentStock": 4800,
+    "createdAt": "2026-11-13T03:45:32.650Z",
+    "lastWaterQuality": {
+      "ph": 7,
+      "dissolvedOxygen": 4.2,
+      "ammonia": 0.15,
+      "nitrite": 0.08,
+      "temperature": 29.5,
+      "recordedAt": "2026-11-13T01:45:32.650Z",
+      "source": "Water Quality Lab"
+    },
+    "history": [
+      {
+        "ph": 7,
+        "dissolvedOxygen": 4.2,
+        "ammonia": 0.15,
+        "nitrite": 0.08,
+        "temperature": 29.5,
+        "recordedAt": "2026-11-13T01:45:32.650Z",
+        "source": "Water Quality Lab"
+      }
+    ]
+  },
+  {
+    "id": "pond-3",
+    "name": "Polyculture Carp Pond 3",
+    "species": "carp",
+    "volumeLiters": 200000,
+    "currentStock": 6000,
+    "createdAt": "2026-11-13T03:45:32.650Z",
+    "lastWaterQuality": {
+      "ph": 7.5,
+      "dissolvedOxygen": 5.8,
+      "ammonia": 0.03,
+      "nitrite": 0.02,
+      "temperature": 26.5,
+      "recordedAt": "2026-11-12T23:45:32.650Z",
+      "source": "Water Quality Lab"
+    },
+    "history": [
+      {
+        "ph": 7.5,
+        "dissolvedOxygen": 5.8,
+        "ammonia": 0.03,
+        "nitrite": 0.02,
+        "temperature": 26.5,
+        "recordedAt": "2026-11-12T23:45:32.650Z",
+        "source": "Water Quality Lab"
+      }
+    ]
+  },
+  {
+    "id": "pond-new",
+    "name": "Pond 4 (New / Unmonitored)",
+    "species": "shrimp",
+    "volumeLiters": 80000,
+    "currentStock": 10000,
+    "createdAt": "2026-11-13T03:45:32.650Z",
+    "lastWaterQuality": null,
+    "history": []
+  }
+]

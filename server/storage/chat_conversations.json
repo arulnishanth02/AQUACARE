@@ -1,0 +1,751 @@
+{
+  "conv-pond-1": {
+    "id": "conv-pond-1",
+    "pondId": "pond-1",
+    "species": "tilapia",
+    "title": "Pond Doctor Consultation",
+    "createdAt": "2026-11-13T03:48:28.230Z",
+    "updatedAt": "2026-11-13T03:59:04.474Z",
+    "messages": [
+      {
+        "id": "msg-1794542265886-welcome",
+        "role": "assistant",
+        "content": "Welcome to AquaCare! I am your AI Pond Doctor. You can share water readings (pH, DO, Ammonia, Nitrite, Temperature) or describe fish symptoms. All water quality thresholds are deterministically verified against certified aquaculture standards.",
+        "provider": "system",
+        "model": "aquacare-engine",
+        "timestamp": "9:27:45 am",
+        "sources": [
+          "AquaCare Aquaculture Compendium",
+          "FAO Small-Scale Aquaculture Guidelines"
+        ]
+      },
+      {
+        "id": "msg-1794542284856-up9nq",
+        "role": "user",
+        "content": "Message 1: Fish are swimming slowly",
+        "provider": null,
+        "model": null,
+        "timestamp": "9:28:04 am",
+        "toolExecutions": [],
+        "sources": [],
+        "waterAnalysis": null,
+        "diseaseDiagnosis": null,
+        "fallbackOccurred": false,
+        "originalProvider": null
+      },
+      {
+        "id": "msg-1794542292571-advgz",
+        "role": "assistant",
+        "content": "Based on the latest water quality readings for **North Nursery Pond 1**, your tilapia are currently experiencing **critical environmental stress**.\n\nThe lab analysis confirms a health score of **45/100**, primarily driven by **lethal ammonia toxicity (0.8 mg/L)** and **sub-optimal dissolved oxygen (3.2 mg/L)**. These conditions are directly causing the slow, lethargic swimming behavior you are observing.\n\n### **IMMEDIATE EMERGENCY ACTIONS (Required Now)**\n\n1.  **STOP ALL FEEDING IMMEDIATELY:** Do not provide any feed for at least 24–48 hours. Digestion consumes significant oxygen and produces more ammonia, which will worsen the current crisis.\n2.  **PERFORM A 30% WATER EXCHANGE:** Drain 30% of the water from the bottom (where ammonia and organic waste accumulate) and replace it with clean, well-aerated water.\n3.  **MAXIMIZE AERATION:** Ensure all mechanical aerators are running at maximum capacity. If you have backup pumps or sprayers, activate them now to increase oxygen levels and help dissipate ammonia.\n4.  **MONITORING:** Observe the fish closely over the next 48 hours. If you see fish gasping at the surface (piping), this indicates the oxygen levels are dropping further, and you must increase water agitation immediately.\n\n### **Why this is happening:**\n*   **Ammonia Toxicity (0.8 mg/L):** This is at a dangerous level for tilapia. It causes internal damage to the gills, preventing the fish from breathing properly and leading to the lethargy you see.\n*   **Low Dissolved Oxygen (3.2 mg/L):** Tilapia require levels above 5 mg/L for healthy growth. At 3.2 mg/L, the fish are in a state of chronic hypoxia, which suppresses their immune system and makes them susceptible to secondary infections.\n\n### **Preventive Measures (Once conditions stabilize):**\n*   **Routine Aeration:** Implement a strict schedule to run aeration every night from 11:00 PM to 7:00 AM, as oxygen levels naturally drop during the night.\n*   **Feeding Management:** Review your feeding rates to ensure you are not overfeeding, which is the primary cause of ammonia spikes.\n*   **Sediment Control:** Regularly siphon organic sediment from the pond bottom to prevent the buildup of waste that leads to these toxic spikes.\n\n**Please monitor the pond closely.** If the fish do not show signs of improvement after the water exchange and cessation of feeding, or if you observe any sudden increase in mortality, please contact a local aquatic health professional immediately for an on-site inspection.",
+        "provider": "gemini",
+        "model": "gemini-3.1-flash-lite",
+        "timestamp": "9:28:12 am",
+        "toolExecutions": [
+          {
+            "tool": "getPondWaterQuality",
+            "input": {
+              "pondId": "pond-1"
+            },
+            "output": {
+              "pondId": "pond-1",
+              "pondName": "North Nursery Pond 1",
+              "species": "tilapia",
+              "hasReadings": true,
+              "parameters": {
+                "ph": 8.5,
+                "dissolvedOxygen": 3.2,
+                "ammonia": 0.8,
+                "nitrite": 0.2,
+                "temperature": 31
+              },
+              "units": {
+                "ph": "pH",
+                "dissolvedOxygen": "mg/L",
+                "ammonia": "mg/L (TAN)",
+                "nitrite": "mg/L (NO2-)",
+                "temperature": "°C"
+              },
+              "recordedAt": "2026-11-13T03:55:31.704Z",
+              "source": "Water Quality Lab"
+            },
+            "status": "completed"
+          },
+          {
+            "tool": "analyzeWaterQuality",
+            "input": {
+              "species": "tilapia",
+              "ph": 8.5,
+              "dissolvedOxygen": 3.2,
+              "ammonia": 0.8,
+              "nitrite": 0.2,
+              "temperature": 31
+            },
+            "output": {
+              "speciesEvaluated": "Tilapia",
+              "overallScore": 45,
+              "status": "CRITICAL",
+              "anomaliesCount": 2,
+              "anomalies": [
+                {
+                  "parameter": "Dissolved Oxygen (DO)",
+                  "value": "3.2 mg/L",
+                  "severity": "WARNING",
+                  "issue": "Sub-optimal DO below 5 mg/L causes chronic stress and poor feed conversion."
+                },
+                {
+                  "parameter": "Ammonia (TAN)",
+                  "value": "0.8 mg/L",
+                  "severity": "CRITICAL",
+                  "issue": "Lethal ammonia toxicity. Causes irreversible branchial hyperplasia and internal hemorrhaging."
+                }
+              ],
+              "deterministicCorrectiveActions": [
+                "Increase nighttime aeration hours (from 11:00 PM to 7:00 AM).",
+                "STOP ALL FEEDING immediately! Perform a 30% bottom water exchange with clean aerated water."
+              ],
+              "evaluatedAt": "2026-11-13T03:58:04.856Z"
+            },
+            "status": "completed"
+          },
+          {
+            "tool": "detectFishProblem",
+            "input": {
+              "symptoms": "Message 1: Fish are swimming slowly",
+              "species": "tilapia"
+            },
+            "output": {
+              "species": "tilapia",
+              "symptomsEvaluated": "message 1: fish are swimming slowly",
+              "mortalityRate": "0%",
+              "emergencyMortalityWarning": false,
+              "matchedConditions": [
+                {
+                  "disease": "Unidentified Fish Stress / Pathogen",
+                  "confidence": "Low",
+                  "severity": "Moderate",
+                  "treatment": "Check all water quality parameters (DO, Ammonia, pH, Nitrite). Stop feeding for 24 hours and observe."
+                }
+              ],
+              "veterinaryAdvisory": "Monitor fish closely for 48 hours following recommended interventions."
+            },
+            "status": "completed"
+          },
+          {
+            "tool": "searchAquacultureKnowledge",
+            "input": {
+              "query": "Message 1: Fish are swimming slowly"
+            },
+            "output": {
+              "retrievedSources": 3,
+              "references": [
+                "AquaCare FAQ Compendium: Why are fish swimming near the water surface?",
+                "AquaCare FAQ Compendium: Why are fish showing unusual swimming patterns?",
+                "AquaCare FAQ Compendium: Why are my fish dying suddenly?"
+              ]
+            },
+            "status": "completed"
+          }
+        ],
+        "sources": [
+          "AquaCare FAQ Compendium: Why are fish swimming near the water surface?",
+          "AquaCare FAQ Compendium: Why are fish showing unusual swimming patterns?",
+          "AquaCare FAQ Compendium: Why are my fish dying suddenly?"
+        ],
+        "waterAnalysis": {
+          "speciesEvaluated": "Tilapia",
+          "overallScore": 45,
+          "status": "CRITICAL",
+          "anomaliesCount": 2,
+          "anomalies": [
+            {
+              "parameter": "Dissolved Oxygen (DO)",
+              "value": "3.2 mg/L",
+              "severity": "WARNING",
+              "issue": "Sub-optimal DO below 5 mg/L causes chronic stress and poor feed conversion."
+            },
+            {
+              "parameter": "Ammonia (TAN)",
+              "value": "0.8 mg/L",
+              "severity": "CRITICAL",
+              "issue": "Lethal ammonia toxicity. Causes irreversible branchial hyperplasia and internal hemorrhaging."
+            }
+          ],
+          "deterministicCorrectiveActions": [
+            "Increase nighttime aeration hours (from 11:00 PM to 7:00 AM).",
+            "STOP ALL FEEDING immediately! Perform a 30% bottom water exchange with clean aerated water."
+          ],
+          "evaluatedAt": "2026-11-13T03:58:04.856Z"
+        },
+        "diseaseDiagnosis": {
+          "species": "tilapia",
+          "symptomsEvaluated": "message 1: fish are swimming slowly",
+          "mortalityRate": "0%",
+          "emergencyMortalityWarning": false,
+          "matchedConditions": [
+            {
+              "disease": "Unidentified Fish Stress / Pathogen",
+              "confidence": "Low",
+              "severity": "Moderate",
+              "treatment": "Check all water quality parameters (DO, Ammonia, pH, Nitrite). Stop feeding for 24 hours and observe."
+            }
+          ],
+          "veterinaryAdvisory": "Monitor fish closely for 48 hours following recommended interventions."
+        },
+        "fallbackOccurred": false,
+        "originalProvider": null
+      },
+      {
+        "id": "msg-1794542292622-dqmks",
+        "role": "user",
+        "content": "Message 2: Should I change the water?",
+        "provider": null,
+        "model": null,
+        "timestamp": "9:28:12 am",
+        "toolExecutions": [],
+        "sources": [],
+        "waterAnalysis": null,
+        "diseaseDiagnosis": null,
+        "fallbackOccurred": false,
+        "originalProvider": null
+      },
+      {
+        "id": "msg-1794542339759-kix6n",
+        "role": "assistant",
+        "content": "Based on the deterministic findings and available water quality readings for **North Nursery Pond 1**, your tilapia are currently experiencing critical environmental stress. The water quality parameters are as follows:\n\n- **Dissolved Oxygen (DO):** 3.2 mg/L (CRITICAL) - Sub-optimal DO below 5 mg/L causes chronic stress and poor feed conversion.\n- **Total Ammonia Nitrogen (TAN):** 0.8 mg/L (CRITICAL) - Lethal ammonia toxicity. Causes irreversible branchial hyperplasia and internal hemorrhaging.\n- **pH:** 8.5 - Within the acceptable range for tilapia.\n- **Nitrite (NO2-):** 0.2 mg/L - Within the acceptable range.\n- **Temperature:** 31 °C - Slightly elevated, but within the acceptable range for tilapia.\n\n### **IMMEDIATE EMERGENCY ACTIONS (Required Now)**\n\n1. **STOP ALL FEEDING IMMEDIATELY:** Do not provide any feed for at least 24–48 hours. Digestion consumes significant oxygen and produces more ammonia, which will worsen the current crisis.\n2. **PERFORM A 30% WATER EXCHANGE:** Drain 30% of the water from the bottom (where ammonia and organic waste accumulate) and replace it with clean, well-aerated water.\n3. **MAXIMIZE AERATION:** Ensure all mechanical aerators are running at maximum capacity. If you have backup pumps or sprayers, activate them now to increase oxygen levels and help dissipate ammonia.\n4. **MONITORING:** Observe the fish closely over the next 48 hours. If you see fish gasping at the surface (piping), this indicates the oxygen levels are dropping further, and you must increase water agitation immediately.\n\n### **Detailed Analysis and Recommendations**\n\n1. **Ammonia Toxicity (0.8 mg/L):** This is at a dangerous level for tilapia. It causes internal damage to the gills, preventing the fish from breathing properly and leading to the lethargy and slow swimming behavior you are observing.\n2. **Low Dissolved Oxygen (3.2 mg/L):** Tilapia require levels above 5 mg/L for healthy growth. At 3.2 mg/L, the fish are in a state of chronic hypoxia, which suppresses their immune system and makes them susceptible to secondary infections.\n\n### **Preventive Measures (Once conditions stabilize):**\n\n1. **Routine Aeration:** Implement a strict schedule to run aeration every night from 11:00 PM to 7:00 AM, as oxygen levels naturally drop during the night.\n2. **Feeding Management:** Review your feeding rates to ensure you are not overfeeding, which is the primary cause of ammonia spikes.\n3. **Sediment Control:** Regularly siphon organic sediment from the pond bottom to prevent the buildup of waste that leads to these toxic spikes.\n\n### **Additional Recommendations:**\n\n1. **Water Quality Monitoring:** Continue to monitor water quality daily, especially in the morning and afternoon, to catch any fluctuations early.\n2. **Temperature Management:** Consider reducing the water temperature slightly if possible, as higher temperatures can increase metabolic rates and oxygen demand.\n3. **Emergency Salt Bath:** If nitrite toxicity is suspected, broadcast agricultural non-iodized salt (NaCl) at 1 to 2 kg per 1,000 liters to help buffer the water and reduce nitrite toxicity.\n\n**Please monitor the pond closely.** If the fish do not show signs of improvement after the water exchange and cessation of feeding, or if you observe any sudden increase in mortality, please contact a local aquatic health professional immediately for an on-site inspection.\n\nIf you have any further questions or need more detailed guidance, feel free to ask!",
+        "provider": "ollama",
+        "model": "qwen2.5:7b",
+        "timestamp": "9:28:59 am",
+        "toolExecutions": [
+          {
+            "tool": "getPondWaterQuality",
+            "input": {
+              "pondId": "pond-1"
+            },
+            "output": {
+              "pondId": "pond-1",
+              "pondName": "North Nursery Pond 1",
+              "species": "tilapia",
+              "hasReadings": true,
+              "parameters": {
+                "ph": 8.5,
+                "dissolvedOxygen": 3.2,
+                "ammonia": 0.8,
+                "nitrite": 0.2,
+                "temperature": 31
+              },
+              "units": {
+                "ph": "pH",
+                "dissolvedOxygen": "mg/L",
+                "ammonia": "mg/L (TAN)",
+                "nitrite": "mg/L (NO2-)",
+                "temperature": "°C"
+              },
+              "recordedAt": "2026-11-13T03:55:31.704Z",
+              "source": "Water Quality Lab"
+            },
+            "status": "completed"
+          },
+          {
+            "tool": "analyzeWaterQuality",
+            "input": {
+              "species": "tilapia",
+              "ph": 8.5,
+              "dissolvedOxygen": 3.2,
+              "ammonia": 0.8,
+              "nitrite": 0.2,
+              "temperature": 31
+            },
+            "output": {
+              "speciesEvaluated": "Tilapia",
+              "overallScore": 45,
+              "status": "CRITICAL",
+              "anomaliesCount": 2,
+              "anomalies": [
+                {
+                  "parameter": "Dissolved Oxygen (DO)",
+                  "value": "3.2 mg/L",
+                  "severity": "WARNING",
+                  "issue": "Sub-optimal DO below 5 mg/L causes chronic stress and poor feed conversion."
+                },
+                {
+                  "parameter": "Ammonia (TAN)",
+                  "value": "0.8 mg/L",
+                  "severity": "CRITICAL",
+                  "issue": "Lethal ammonia toxicity. Causes irreversible branchial hyperplasia and internal hemorrhaging."
+                }
+              ],
+              "deterministicCorrectiveActions": [
+                "Increase nighttime aeration hours (from 11:00 PM to 7:00 AM).",
+                "STOP ALL FEEDING immediately! Perform a 30% bottom water exchange with clean aerated water."
+              ],
+              "evaluatedAt": "2026-11-13T03:58:12.655Z"
+            },
+            "status": "completed"
+          },
+          {
+            "tool": "searchAquacultureKnowledge",
+            "input": {
+              "query": "Message 2: Should I change the water?"
+            },
+            "output": {
+              "retrievedSources": 3,
+              "references": [
+                "AquaCare FAQ Compendium: How often should I check pond water quality?",
+                "AquaCare FAQ Compendium: Why are fish swimming near the water surface?",
+                "AquaCare FAQ Compendium: How much food should I provide to my fish?"
+              ]
+            },
+            "status": "completed"
+          }
+        ],
+        "sources": [
+          "AquaCare FAQ Compendium: How often should I check pond water quality?",
+          "AquaCare FAQ Compendium: Why are fish swimming near the water surface?",
+          "AquaCare FAQ Compendium: How much food should I provide to my fish?"
+        ],
+        "waterAnalysis": {
+          "speciesEvaluated": "Tilapia",
+          "overallScore": 45,
+          "status": "CRITICAL",
+          "anomaliesCount": 2,
+          "anomalies": [
+            {
+              "parameter": "Dissolved Oxygen (DO)",
+              "value": "3.2 mg/L",
+              "severity": "WARNING",
+              "issue": "Sub-optimal DO below 5 mg/L causes chronic stress and poor feed conversion."
+            },
+            {
+              "parameter": "Ammonia (TAN)",
+              "value": "0.8 mg/L",
+              "severity": "CRITICAL",
+              "issue": "Lethal ammonia toxicity. Causes irreversible branchial hyperplasia and internal hemorrhaging."
+            }
+          ],
+          "deterministicCorrectiveActions": [
+            "Increase nighttime aeration hours (from 11:00 PM to 7:00 AM).",
+            "STOP ALL FEEDING immediately! Perform a 30% bottom water exchange with clean aerated water."
+          ],
+          "evaluatedAt": "2026-11-13T03:58:12.655Z"
+        },
+        "diseaseDiagnosis": null,
+        "fallbackOccurred": false,
+        "originalProvider": null
+      },
+      {
+        "id": "msg-1794542339764-ofeex",
+        "role": "user",
+        "content": "Message 3: What salt ratio is recommended?",
+        "provider": null,
+        "model": null,
+        "timestamp": "9:28:59 am",
+        "toolExecutions": [],
+        "sources": [],
+        "waterAnalysis": null,
+        "diseaseDiagnosis": null,
+        "fallbackOccurred": false,
+        "originalProvider": null
+      },
+      {
+        "id": "msg-1794542344474-dszwq",
+        "role": "assistant",
+        "content": "For your tilapia in **North Nursery Pond 1**, the use of salt is a common management practice, but it is important to understand its specific purpose in your current situation.\n\n### **Salt Application Guidelines for Tilapia**\n\nIn aquaculture, agricultural-grade non-iodized salt (NaCl) is primarily used to reduce stress and mitigate nitrite toxicity. \n\n*   **Recommended Ratio:** For general stress reduction and to assist with nitrite toxicity, a concentration of **1 to 3 kg per 1,000 liters (1–3 ppt)** of pond water is the standard scientific recommendation.\n*   **Application Method:** Do not dump salt in one spot. Dissolve the salt in a bucket of pond water first, then distribute it evenly across the surface of the pond to ensure it mixes thoroughly.\n\n### **CRITICAL WARNING: Salt is NOT a cure for your current crisis**\nWhile salt helps with stress and nitrite, **it will NOT solve your primary problems: Ammonia (0.8 mg/L) and low Dissolved Oxygen (3.2 mg/L).**\n\n1.  **Do not rely on salt to fix the ammonia:** Salt does not remove ammonia. The only way to lower ammonia is through the **30% water exchange** and **stopping all feeding** as previously advised.\n2.  **Oxygen is the priority:** At 3.2 mg/L of DO, your fish are suffocating. Your immediate focus must remain on **mechanical aeration** and **water exchange**. \n3.  **pH Interaction:** Your current pH is 8.5. At this level, a significant portion of your Total Ammonia Nitrogen (TAN) is in the highly toxic un-ionized (NH3) form. Adding salt will not neutralize this toxicity; only reducing the pH or diluting the water will help.\n\n### **Summary of Immediate Actions**\n*   **Priority 1:** **STOP FEEDING.** This is the most effective way to stop the ammonia from rising further.\n*   **Priority 2:** **30% WATER EXCHANGE.** This is the fastest way to physically remove ammonia and improve water quality.\n*   **Priority 3:** **MAXIMIZE AERATION.** This is essential to keep the fish alive while you manage the ammonia.\n*   **Priority 4:** **SALT (Optional/Secondary).** You may apply salt at 1–3 kg/1,000L to help the fish cope with the stress, but only after you have addressed the oxygen and ammonia levels.\n\n**If you observe fish gasping at the surface or mortality increases, please contact a local aquatic health professional immediately.** Your current water quality readings indicate a high risk of significant fish loss if these emergency steps are not taken immediately.",
+        "provider": "gemini",
+        "model": "gemini-3.1-flash-lite",
+        "timestamp": "9:29:04 am",
+        "toolExecutions": [
+          {
+            "tool": "getPondWaterQuality",
+            "input": {
+              "pondId": "pond-1"
+            },
+            "output": {
+              "pondId": "pond-1",
+              "pondName": "North Nursery Pond 1",
+              "species": "tilapia",
+              "hasReadings": true,
+              "parameters": {
+                "ph": 8.5,
+                "dissolvedOxygen": 3.2,
+                "ammonia": 0.8,
+                "nitrite": 0.2,
+                "temperature": 31
+              },
+              "units": {
+                "ph": "pH",
+                "dissolvedOxygen": "mg/L",
+                "ammonia": "mg/L (TAN)",
+                "nitrite": "mg/L (NO2-)",
+                "temperature": "°C"
+              },
+              "recordedAt": "2026-11-13T03:55:31.704Z",
+              "source": "Water Quality Lab"
+            },
+            "status": "completed"
+          },
+          {
+            "tool": "analyzeWaterQuality",
+            "input": {
+              "species": "tilapia",
+              "ph": 8.5,
+              "dissolvedOxygen": 3.2,
+              "ammonia": 0.8,
+              "nitrite": 0.2,
+              "temperature": 31
+            },
+            "output": {
+              "speciesEvaluated": "Tilapia",
+              "overallScore": 45,
+              "status": "CRITICAL",
+              "anomaliesCount": 2,
+              "anomalies": [
+                {
+                  "parameter": "Dissolved Oxygen (DO)",
+                  "value": "3.2 mg/L",
+                  "severity": "WARNING",
+                  "issue": "Sub-optimal DO below 5 mg/L causes chronic stress and poor feed conversion."
+                },
+                {
+                  "parameter": "Ammonia (TAN)",
+                  "value": "0.8 mg/L",
+                  "severity": "CRITICAL",
+                  "issue": "Lethal ammonia toxicity. Causes irreversible branchial hyperplasia and internal hemorrhaging."
+                }
+              ],
+              "deterministicCorrectiveActions": [
+                "Increase nighttime aeration hours (from 11:00 PM to 7:00 AM).",
+                "STOP ALL FEEDING immediately! Perform a 30% bottom water exchange with clean aerated water."
+              ],
+              "evaluatedAt": "2026-11-13T03:58:59.764Z"
+            },
+            "status": "completed"
+          },
+          {
+            "tool": "searchAquacultureKnowledge",
+            "input": {
+              "query": "Message 3: What salt ratio is recommended?"
+            },
+            "output": {
+              "retrievedSources": 3,
+              "references": [
+                "AquaCare FAQ Compendium: What happens when the pH level is too high?",
+                "AquaCare FAQ Compendium: What causes ammonia levels to increase?",
+                "AquaCare FAQ Compendium: What happens when dissolved oxygen is low?"
+              ]
+            },
+            "status": "completed"
+          }
+        ],
+        "sources": [
+          "AquaCare FAQ Compendium: What happens when the pH level is too high?",
+          "AquaCare FAQ Compendium: What causes ammonia levels to increase?",
+          "AquaCare FAQ Compendium: What happens when dissolved oxygen is low?"
+        ],
+        "waterAnalysis": {
+          "speciesEvaluated": "Tilapia",
+          "overallScore": 45,
+          "status": "CRITICAL",
+          "anomaliesCount": 2,
+          "anomalies": [
+            {
+              "parameter": "Dissolved Oxygen (DO)",
+              "value": "3.2 mg/L",
+              "severity": "WARNING",
+              "issue": "Sub-optimal DO below 5 mg/L causes chronic stress and poor feed conversion."
+            },
+            {
+              "parameter": "Ammonia (TAN)",
+              "value": "0.8 mg/L",
+              "severity": "CRITICAL",
+              "issue": "Lethal ammonia toxicity. Causes irreversible branchial hyperplasia and internal hemorrhaging."
+            }
+          ],
+          "deterministicCorrectiveActions": [
+            "Increase nighttime aeration hours (from 11:00 PM to 7:00 AM).",
+            "STOP ALL FEEDING immediately! Perform a 30% bottom water exchange with clean aerated water."
+          ],
+          "evaluatedAt": "2026-11-13T03:58:59.764Z"
+        },
+        "diseaseDiagnosis": null,
+        "fallbackOccurred": false,
+        "originalProvider": null
+      }
+    ]
+  },
+  "conv-pond-new": {
+    "id": "conv-pond-new",
+    "pondId": "pond-new",
+    "species": "shrimp",
+    "title": "Pond Doctor Consultation",
+    "createdAt": "2026-11-13T03:49:27.676Z",
+    "updatedAt": "2026-11-13T03:55:44.149Z",
+    "messages": [
+      {
+        "id": "msg-1794541767676-welcome",
+        "role": "assistant",
+        "content": "Welcome to AquaCare! I am your AI Pond Doctor. You can share water readings (pH, DO, Ammonia, Nitrite, Temperature) or describe fish symptoms. All water quality thresholds are deterministically verified against certified aquaculture standards.",
+        "provider": "system",
+        "model": "aquacare-engine",
+        "timestamp": "9:19:27 am",
+        "sources": [
+          "AquaCare Aquaculture Compendium",
+          "FAO Small-Scale Aquaculture Guidelines"
+        ]
+      },
+      {
+        "id": "msg-1794541767709-nmauc",
+        "role": "user",
+        "content": "Can you analyze my pond condition?",
+        "provider": null,
+        "model": null,
+        "timestamp": "9:19:27 am",
+        "toolExecutions": [],
+        "sources": [],
+        "waterAnalysis": null,
+        "diseaseDiagnosis": null,
+        "fallbackOccurred": false,
+        "originalProvider": null
+      },
+      {
+        "id": "msg-1794541771165-8uf5r",
+        "role": "assistant",
+        "content": "Hello. I am ready to assist you with your shrimp farming operations in **Pond 4**.\n\nCurrently, there are **no water quality measurements recorded on file** for this pond. Because water quality is the single most important factor in shrimp health—especially regarding oxygen levels, pH, and ammonia—I cannot provide a specific health evaluation without data.\n\nTo help me analyze your pond condition, please test and provide the following parameters:\n*   **Dissolved Oxygen (DO)** (Critical for shrimp)\n*   **pH**\n*   **Ammonia (TAN)**\n*   **Temperature**\n\n### Proactive Management for Shrimp\nWhile you gather these readings, please keep the following best practices in mind for your shrimp pond:\n\n1.  **Water Quality Maintenance:** Proactive management is far more effective than treating disease. Ensure your aeration is running reliably, especially during the night and early morning hours (midnight to 6:00 AM) when oxygen levels naturally drop.\n2.  **Feeding Discipline:** Shrimp are highly sensitive to water quality degradation caused by uneaten feed. Adjust your daily feed rations based on water temperature and the shrimp's actual appetite. Do not overfeed.\n3.  **Waste Management:** Prevent the buildup of organic waste (uneaten feed and feces) on the pond bottom. If you notice black, foul-smelling sludge, it indicates anaerobic conditions that can release toxic hydrogen sulfide.\n4.  **Biological Stability:** Consider using commercial bio-probiotics (*Bacillus* species) to help break down organic matter and out-compete pathogenic bacteria in the water column.\n\n**Once you have your water test results, please share them with me, and I will provide a deterministic analysis of your pond's health status.**",
+        "provider": "gemini",
+        "model": "gemini-3.1-flash-lite",
+        "timestamp": "9:19:31 am",
+        "toolExecutions": [
+          {
+            "tool": "getPondWaterQuality",
+            "input": {
+              "pondId": "pond-new"
+            },
+            "output": {
+              "pondId": "pond-new",
+              "pondName": "Pond 4 (New / Unmonitored)",
+              "species": "shrimp",
+              "hasReadings": false,
+              "status": "NO_MEASUREMENTS",
+              "message": "No water quality measurements recorded yet for Pond 4 (New / Unmonitored). Ask the farmer to test and enter DO, pH, ammonia, or temperature."
+            },
+            "status": "completed"
+          },
+          {
+            "tool": "searchAquacultureKnowledge",
+            "input": {
+              "query": "Can you analyze my pond condition?"
+            },
+            "output": {
+              "retrievedSources": 3,
+              "references": [
+                "AquaCare FAQ Compendium: How can I maintain good pond water quality?",
+                "AquaCare FAQ Compendium: Why are fish gathering in one corner of the pond?",
+                "AquaCare FAQ Compendium: How can I prevent organic waste accumulation?"
+              ]
+            },
+            "status": "completed"
+          }
+        ],
+        "sources": [
+          "AquaCare FAQ Compendium: How can I maintain good pond water quality?",
+          "AquaCare FAQ Compendium: Why are fish gathering in one corner of the pond?",
+          "AquaCare FAQ Compendium: How can I prevent organic waste accumulation?"
+        ],
+        "waterAnalysis": null,
+        "diseaseDiagnosis": null,
+        "fallbackOccurred": false,
+        "originalProvider": null
+      },
+      {
+        "id": "msg-1794542140971-cs1p0",
+        "role": "user",
+        "content": "Please analyze my pond condition right now.",
+        "provider": null,
+        "model": null,
+        "timestamp": "9:25:40 am",
+        "toolExecutions": [],
+        "sources": [],
+        "waterAnalysis": null,
+        "diseaseDiagnosis": null,
+        "fallbackOccurred": false,
+        "originalProvider": null
+      },
+      {
+        "id": "msg-1794542144149-tqdv1",
+        "role": "assistant",
+        "content": "As noted in the system records, there are **no water quality measurements recorded on file for Pond 4**. Without current data on Dissolved Oxygen (DO), pH, Ammonia, and Temperature, I cannot provide a deterministic health evaluation for your shrimp.\n\n**To receive an accurate assessment, please test your water and provide the following values:**\n*   **Dissolved Oxygen (DO):** (Critical for shrimp survival)\n*   **pH:**\n*   **Ammonia (TAN):**\n*   **Temperature:**\n\n### Immediate Guidance for Unmonitored Shrimp Ponds\nSince Pond 4 is currently unmonitored, you should treat it with high caution. Shrimp are extremely sensitive to environmental shifts. Please observe your pond for the following warning signs:\n\n1.  **Check for Odors:** Does the water smell like rotten eggs (hydrogen sulfide) or stagnant swamp gas? If so, this indicates anaerobic decomposition on the pond bottom, which is toxic to shrimp.\n2.  **Check for Algal Blooms:** Is the water a bright, fluorescent \"pea soup\" green? This can lead to dangerous oxygen crashes at night.\n3.  **Observe Behavior:** Are the shrimp congregating in corners or at the surface? This is often a sign of poor water quality or low oxygen.\n\n**If you observe any of these signs, take these immediate actions:**\n*   **Reduce Feeding:** Cut your daily feed ration by 30% to 50% immediately to reduce the nutrient load on the water.\n*   **Maximize Aeration:** Ensure all aerators are running, especially during the night and early morning hours.\n*   **Water Exchange:** If possible, perform a gradual 15%–20% water exchange to dilute potential toxins.\n\n**Please provide your water quality test results as soon as possible so I can perform a professional analysis and provide specific, actionable recommendations for your shrimp.**",
+        "provider": "gemini",
+        "model": "gemini-3.1-flash-lite",
+        "timestamp": "9:25:44 am",
+        "toolExecutions": [
+          {
+            "tool": "getPondWaterQuality",
+            "input": {
+              "pondId": "pond-new"
+            },
+            "output": {
+              "pondId": "pond-new",
+              "pondName": "Pond 4 (New / Unmonitored)",
+              "species": "shrimp",
+              "hasReadings": false,
+              "status": "NO_MEASUREMENTS",
+              "message": "No water quality measurements recorded yet for Pond 4 (New / Unmonitored). Ask the farmer to test and enter DO, pH, ammonia, or temperature."
+            },
+            "status": "completed"
+          },
+          {
+            "tool": "searchAquacultureKnowledge",
+            "input": {
+              "query": "Please analyze my pond condition right now."
+            },
+            "output": {
+              "retrievedSources": 3,
+              "references": [
+                "AquaCare FAQ Compendium: Why does my pond water have a bad smell?",
+                "AquaCare FAQ Compendium: Why is my pond water turning green?",
+                "AquaCare FAQ Compendium: Why are fish gathering in one corner of the pond?"
+              ]
+            },
+            "status": "completed"
+          }
+        ],
+        "sources": [
+          "AquaCare FAQ Compendium: Why does my pond water have a bad smell?",
+          "AquaCare FAQ Compendium: Why is my pond water turning green?",
+          "AquaCare FAQ Compendium: Why are fish gathering in one corner of the pond?"
+        ],
+        "waterAnalysis": null,
+        "diseaseDiagnosis": null,
+        "fallbackOccurred": false,
+        "originalProvider": null
+      }
+    ]
+  },
+  "conv-pond-2": {
+    "id": "conv-pond-2",
+    "pondId": "pond-2",
+    "species": "catfish",
+    "title": "Pond Doctor Consultation",
+    "createdAt": "2026-11-13T03:55:36.918Z",
+    "updatedAt": "2026-11-13T03:55:40.901Z",
+    "messages": [
+      {
+        "id": "msg-1794542136918-welcome",
+        "role": "assistant",
+        "content": "Welcome to AquaCare! I am your AI Pond Doctor. You can share water readings (pH, DO, Ammonia, Nitrite, Temperature) or describe fish symptoms. All water quality thresholds are deterministically verified against certified aquaculture standards.",
+        "provider": "system",
+        "model": "aquacare-engine",
+        "timestamp": "9:25:36 am",
+        "sources": [
+          "AquaCare Aquaculture Compendium",
+          "FAO Small-Scale Aquaculture Guidelines"
+        ]
+      },
+      {
+        "id": "msg-1794542136919-84lml",
+        "role": "user",
+        "content": "What are the common water-quality problems for my fish?",
+        "provider": null,
+        "model": null,
+        "timestamp": "9:25:36 am",
+        "toolExecutions": [],
+        "sources": [],
+        "waterAnalysis": null,
+        "diseaseDiagnosis": null,
+        "fallbackOccurred": false,
+        "originalProvider": null
+      },
+      {
+        "id": "msg-1794542140901-nnuv4",
+        "role": "assistant",
+        "content": "Based on the latest water quality data for your **Grow-Out Pond 2 (Catfish)**, I have analyzed your current conditions.\n\n### **Current Pond Status: EXCELLENT**\nYour most recent readings (recorded on 2026-11-13) indicate that your pond is currently in a healthy state.\n\n*   **Dissolved Oxygen (DO):** 4.2 mg/L (Safe)\n*   **pH Level:** 7.0 (Optimal)\n*   **Total Ammonia Nitrogen (TAN):** 0.15 mg/L (Safe)\n*   **Nitrite (NO2-):** 0.08 mg/L (Safe)\n*   **Temperature:** 29.5 °C (Within normal range for Catfish)\n\n**Overall Health Score: 100/100**\n\n---\n\n### **Common Water-Quality Problems to Monitor**\nWhile your pond is currently stable, as a catfish farmer, you should remain vigilant regarding the following common water-quality risks:\n\n1.  **Hypoxia (Low Oxygen):** Even though your current reading is 4.2 mg/L, catfish can be sensitive to sudden drops, especially at night or during cloudy weather. \n    *   *Watch for:* Fish gasping at the surface (piping).\n    *   *Action:* If you observe this, activate aerators immediately and stop feeding.\n\n2.  **pH Fluctuations:** \n    *   **Low pH (< 6.5):** Causes skin irritation and gill damage. If your pH drops, you may need to apply agricultural limestone (calcium carbonate).\n    *   **High pH (> 8.8):** This is dangerous because it increases the toxicity of ammonia. If pH rises, avoid over-feeding and consider partial water exchanges.\n\n3.  **Ammonia and Nitrite Spikes:** These are usually caused by over-feeding or organic waste accumulation. \n    *   *Action:* Always follow a strict feeding table to prevent surplus feed from decaying on the pond bottom.\n\n### **Recommended Maintenance**\n*   **Continue Standard Maintenance:** Since your current readings are excellent, no corrective chemical actions are required at this time.\n*   **Routine Monitoring:** Continue to monitor these parameters regularly. If you notice any behavioral changes in your catfish (e.g., loss of appetite, flashing, or lethargy), please report those symptoms immediately so I can help you diagnose potential health issues.\n\n**Do you have any concerns about the behavior of your fish, or would you like to record a new set of water readings?**",
+        "provider": "gemini",
+        "model": "gemini-3.1-flash-lite",
+        "timestamp": "9:25:40 am",
+        "toolExecutions": [
+          {
+            "tool": "getPondWaterQuality",
+            "input": {
+              "pondId": "pond-2"
+            },
+            "output": {
+              "pondId": "pond-2",
+              "pondName": "Grow-Out Pond 2 (Commercial Catfish)",
+              "species": "catfish",
+              "hasReadings": true,
+              "parameters": {
+                "ph": 7,
+                "dissolvedOxygen": 4.2,
+                "ammonia": 0.15,
+                "nitrite": 0.08,
+                "temperature": 29.5
+              },
+              "units": {
+                "ph": "pH",
+                "dissolvedOxygen": "mg/L",
+                "ammonia": "mg/L (TAN)",
+                "nitrite": "mg/L (NO2-)",
+                "temperature": "°C"
+              },
+              "recordedAt": "2026-11-13T01:45:32.650Z",
+              "source": "Water Quality Lab"
+            },
+            "status": "completed"
+          },
+          {
+            "tool": "analyzeWaterQuality",
+            "input": {
+              "species": "catfish",
+              "ph": 7,
+              "dissolvedOxygen": 4.2,
+              "ammonia": 0.15,
+              "nitrite": 0.08,
+              "temperature": 29.5
+            },
+            "output": {
+              "speciesEvaluated": "African Catfish",
+              "overallScore": 100,
+              "status": "EXCELLENT",
+              "anomaliesCount": 0,
+              "anomalies": [],
+              "deterministicCorrectiveActions": [],
+              "evaluatedAt": "2026-11-13T03:55:36.922Z"
+            },
+            "status": "completed"
+          },
+          {
+            "tool": "searchAquacultureKnowledge",
+            "input": {
+              "query": "What are the common water-quality problems for my fish?"
+            },
+            "output": {
+              "retrievedSources": 3,
+              "references": [
+                "AquaCare FAQ Compendium: Why are fish swimming near the water surface?",
+                "AquaCare FAQ Compendium: What happens when the pH level is too low?",
+                "AquaCare FAQ Compendium: What happens when the pH level is too high?"
+              ]
+            },
+            "status": "completed"
+          }
+        ],
+        "sources": [
+          "AquaCare FAQ Compendium: Why are fish swimming near the water surface?",
+          "AquaCare FAQ Compendium: What happens when the pH level is too low?",
+          "AquaCare FAQ Compendium: What happens when the pH level is too high?"
+        ],
+        "waterAnalysis": {
+          "speciesEvaluated": "African Catfish",
+          "overallScore": 100,
+          "status": "EXCELLENT",
+          "anomaliesCount": 0,
+          "anomalies": [],
+          "deterministicCorrectiveActions": [],
+          "evaluatedAt": "2026-11-13T03:55:36.922Z"
+        },
+        "diseaseDiagnosis": null,
+        "fallbackOccurred": false,
+        "originalProvider": null
+      }
+    ]
+  }
+}

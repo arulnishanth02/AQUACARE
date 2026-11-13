@@ -32,9 +32,9 @@ app.use((req, res, next) => {
 // AI Routes
 app.use('/api/ai', aiRoutes);
 
-// Direct top-level alias as requested in specification
-app.post('/api/chat', (req, res, next) => {
-  req.url = '/chat';
+// Direct top-level chat aliases for messages, history, and deletion
+app.use('/api/chat', (req, res, next) => {
+  req.url = `/chat${req.url === '/' ? '' : req.url}`;
   aiRoutes(req, res, next);
 });
 

@@ -26,16 +26,16 @@ export default function ChatInput({ onSendMessage, loading, selectedSpecies, onS
   };
 
   return (
-    <div className="pt-2 border-t border-slate-800 bg-slate-950/80">
+    <div className="pt-2 border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-950/80 transition-colors">
       {/* Quick Prompt Chips */}
       <div className="flex items-center gap-1.5 overflow-x-auto pb-2.5 text-xs no-scrollbar">
-        <span className="text-[10px] text-slate-500 uppercase font-bold shrink-0">Quick Scenarios:</span>
+        <span className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold shrink-0">Quick Scenarios:</span>
         {suggestions.map((s, idx) => (
           <button
             key={idx}
             onClick={() => onSendMessage(s.prompt)}
             disabled={loading}
-            className="shrink-0 px-2.5 py-1 rounded-full bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-teal-500/50 text-[11px] text-slate-300 transition-colors disabled:opacity-50"
+            className="shrink-0 px-2.5 py-1 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 hover:border-teal-500/50 text-[11px] text-slate-700 dark:text-slate-300 transition-colors disabled:opacity-50"
           >
             {s.label}
           </button>
@@ -47,10 +47,10 @@ export default function ChatInput({ onSendMessage, loading, selectedSpecies, onS
         {/* Species selector */}
         <div className="shrink-0">
           <select
-            value={selectedSpecies}
+            value={selectedSpecies?.toLowerCase() || 'tilapia'}
             onChange={(e) => onSelectSpecies(e.target.value)}
             disabled={loading}
-            className="rounded-xl bg-slate-900 border border-slate-800 px-3 py-3 text-xs font-semibold text-teal-400 focus:outline-none focus:border-teal-500 cursor-pointer"
+            className="rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-3 py-3 text-xs font-semibold text-teal-700 dark:text-teal-400 focus:outline-none focus:border-teal-500 cursor-pointer"
           >
             <option value="tilapia">Tilapia</option>
             <option value="catfish">Catfish</option>
@@ -66,7 +66,7 @@ export default function ChatInput({ onSendMessage, loading, selectedSpecies, onS
           onKeyDown={handleKeyDown}
           placeholder="Describe fish symptoms or enter pond readings (e.g. pH 6.8, DO 2.5, TAN 0.8)..."
           disabled={loading}
-          className="flex-1 rounded-xl bg-slate-900 border border-slate-800 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all disabled:opacity-50"
+          className="flex-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all disabled:opacity-50"
         />
 
         <button
@@ -80,4 +80,3 @@ export default function ChatInput({ onSendMessage, loading, selectedSpecies, onS
     </div>
   );
 }
-

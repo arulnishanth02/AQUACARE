@@ -1,4 +1,5 @@
 import { ragEngine } from './ragEngine.js';
+import { pondStore } from '../storage/pondStore.js';
 
 // Predefined species profiles for deterministic threshold checks
 const SPECIES_THRESHOLDS = {
@@ -288,22 +289,67 @@ export function searchAquacultureKnowledge(params = {}) {
 }
 
 /**
+ * Get Current Pond Water Quality Readings from Storage
+ */
+export function getPondWaterQuality(params = {}) {
+  const pondId = params.pondId || 'pond-1';
+  const reading = pondStore.getLatestWaterQuality(pondId);
+  const pond = pondStore.getPond(pondId);
+
+  if (!reading || (reading.ph === null && reading.dissolvedOxygen === null)) {
+    return {
+      pondId,
+      pondName: pond?.name || pondId,
+      species: pond?.species || 'tilapia',
+      hasReadings: false,
+      status: 'NO_MEASUREMENTS',
+      message: `No water quality measurements recorded yet for ${pond?.name || pondId}. Ask the farmer to test and enter DO, pH, ammonia, or temperature.`
+    };
+  }
+
+  return {
+    pondId,
+    pondName: pond?.name || pondId,
+    species: pond?.species || reading.species || 'tilapia',
+    hasReadings: true,
+    parameters: {
+      ph: reading.ph,
+      dissolvedOxygen: reading.dissolvedOxygen,
+      ammonia: reading.ammonia,
+      nitrite: reading.nitrite,
+      temperature: reading.temperature
+    },
+    units: {
+      ph: 'pH',
+      dissolvedOxygen: 'mg/L',
+      ammonia: 'mg/L (TAN)',
+      nitrite: 'mg/L (NO2-)',
+      temperature: '°C'
+    },
+    recordedAt: reading.recordedAt,
+    source: reading.source || 'Water Quality Lab'
+  };
+}
+
+/**
  * Get Pond History
  */
 export function getPondHistory(params = {}) {
   const pondId = params.pondId || 'pond-1';
+  const pond = pondStore.getPond(pondId);
+  const history = pondStore.getWaterQualityHistory(pondId, 5);
+
   return {
     pondId,
-    pondName: 'Main Commercial Grow-out Pond 1',
-    species: 'Nile Tilapia',
-    volumeLiters: 150000,
-    currentStock: 4800,
-    historicalReadings: [
+    pondName: pond?.name || 'Main Commercial Grow-out Pond 1',
+    species: pond?.species || 'tilapia',
+    volumeLiters: pond?.volumeLiters || 150000,
+    currentStock: pond?.currentStock || 4800,
+    historicalReadings: history.length > 0 ? history : [
       { timestamp: 'Yesterday 06:00 AM', ph: 7.2, dissolvedOxygen: 4.8, ammonia: 0.08, temp: 28 },
-      { timestamp: 'Yesterday 06:00 PM', ph: 7.9, dissolvedOxygen: 6.9, ammonia: 0.12, temp: 30 },
-      { timestamp: 'Today 06:00 AM', ph: 7.1, dissolvedOxygen: 4.2, ammonia: 0.22, temp: 27.5 }
+      { timestamp: 'Yesterday 06:00 PM', ph: 7.9, dissolvedOxygen: 6.9, ammonia: 0.12, temp: 30 }
     ],
-    lastIncident: 'Nitrite spike 2 weeks ago resolved with 25% water exchange and agricultural salt.'
+    lastIncident: 'Nitrite spike resolved with 25% water exchange and agricultural salt.'
   };
 }
 
@@ -311,6 +357,16 @@ export function getPondHistory(params = {}) {
  * Tool registry metadata used for AI function declarations
  */
 export const TOOL_DEFINITIONS = [
+  {
+    name: 'getPondWaterQuality',
+    description: 'Retrieves actual stored water-quality sensor readings (DO, pH, ammonia, nitrite, temperature) and timestamps for a specific pond from the Water Quality Lab database.',
+    parameters: {
+      type: 'object',
+      properties: {
+        pondId: { type: 'string', description: 'Pond identifier (e.g. "pond-1")' }
+      }
+    }
+  },
   {
     name: 'analyzeWaterQuality',
     description: 'Calculates deterministic water quality health score, verifies parameters against scientific species standards, and identifies critical hazards.',
@@ -363,6 +419,7 @@ export const TOOL_DEFINITIONS = [
 ];
 
 export const TOOL_DISPATCHER = {
+  getPondWaterQuality,
   analyzeWaterQuality,
   detectFishProblem,
   searchAquacultureKnowledge,

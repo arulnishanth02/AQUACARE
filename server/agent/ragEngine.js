@@ -68,6 +68,31 @@ export class RAGEngine {
       });
     }
 
+    // Flatten FAQs into RAG knowledge
+    try {
+      const faqsPath = path.resolve(__dirname, '../data/faqs.json');
+      if (fs.existsSync(faqsPath)) {
+        const faqs = JSON.parse(fs.readFileSync(faqsPath, 'utf-8'));
+        for (const faq of faqs) {
+          docs.push({
+            id: `faq_${faq.id}`,
+            type: 'faq_solution',
+            title: faq.title,
+            keywords: [
+              faq.category.toLowerCase(),
+              ...faq.title.toLowerCase().split(/\s+/),
+              ...(faq.symptoms || []).map(s => s.toLowerCase()),
+              ...(faq.possibleCauses || []).map(c => c.toLowerCase())
+            ],
+            content: `Problem: ${faq.title} (${faq.category}, Severity: ${faq.severity}). Overview: ${faq.overview}. Immediate Actions: ${(faq.immediateActions || []).join(' ')}. Solutions: ${(faq.shortTermSolutions || []).join(' ')}. Preventive: ${(faq.preventiveMeasures || []).join(' ')}`,
+            source: `AquaCare FAQ Compendium: ${faq.title}`
+          });
+        }
+      }
+    } catch (err) {
+      console.warn('Could not index faqs into RAG:', err.message);
+    }
+
     return docs;
   }
 
